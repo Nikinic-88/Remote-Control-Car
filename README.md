@@ -30,4 +30,4 @@ The site uses plain HTML, CSS and JavaScript with a bundled model-viewer runtime
 
 The four redesigned assemblies preserve 127 original mechanical components and omit the unused external FPV antenna. The supplied original STEP remains unchanged. Track, Rally and Retro GT each contain 17 printed exterior parts; Formula contains 11. Each part's CAD envelope is below 230 mm. Static checks pass, but PLA tolerances, supports, fit, steering/suspension travel and load durability require physical testing before use.
 
-Color choices change the browser preview. STEP downloads use each design's default finish.
+Color choices change the browser preview and carry across all car concepts. Captions describe the design independently of paint. Choose the filament color when printing the STEP parts.

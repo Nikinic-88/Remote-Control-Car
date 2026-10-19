@@ -5,43 +5,40 @@ const status=document.querySelector('#viewer-status');
 const fallback=document.querySelector('#fallback');
 const cameras={front:'45deg 65deg 105%',rear:'225deg 65deg 105%',side:'0deg 85deg 105%',reset:'45deg 65deg 105%'};
 const models={
- original:{src:'sophikart-original.glb?v=modular-release-r1',prefix:'original',step:'MEV_Original_Styled_00.step',count:15,title:'Original',edition:'ORIGINAL / ORANGE FINISH',heading:'Small scale.<br><em>Original</em><br>character.',description:'Uniform orange bodywork with dark wheels and trim. Original MEV2018 geometry: all 143 components stay unchanged in shape and position.'},
- track:{src:'sophikart.glb?v=modular-release-r1',prefix:'track',step:'Track_Modular_Print_Kit.zip',count:17,title:'Track',edition:'TRACK / KLEIN BLUE',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Klein blue bodywork with separate contrasting headlight parts. The Track exterior retains 127 original chassis components.'},
- formula:{src:'sophikart-formula.glb?v=modular-release-r1',prefix:'formula',step:'Formula_Modular_Print_Kit.zip',count:11,title:'Formula',edition:'FORMULA / GREEN',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Green bodywork and exposed wheels. The Formula exterior fits around the same 127 original chassis components.'},
- rally:{src:'sophikart-rally.glb?v=modular-release-r1',prefix:'rally',step:'Rally_Modular_Print_Kit.zip',count:17,title:'Rally',edition:'RALLY / RED',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Red angular bodywork, flared wheel arches, and four auxiliary lamps. The original 127 mechanical components remain in their original positions.'},
- retro:{src:'sophikart-retro.glb?v=modular-release-r1',prefix:'retro',step:'Retro_Modular_Print_Kit.zip',count:17,title:'Retro GT',edition:'RETRO GT / YELLOW',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Yellow curved bodywork, round headlights, and a compact ducktail. A retro coupe shell around the same 127 original mechanical components.'}
+ original:{src:'sophikart-original.glb?v=modular-release-r1',prefix:'original',step:'MEV_Original_Styled_00.step',count:15,title:'Original',edition:'ORIGINAL',heading:'Small scale.<br><em>Original</em><br>character.',description:'Original MEV2018 body panels, wheels and trim. All 143 components stay unchanged in shape and position.'},
+ track:{src:'sophikart.glb?v=modular-release-r1',prefix:'track',step:'Track_Modular_Print_Kit.zip',count:17,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight parts. The Track exterior retains 127 original chassis components.'},
+ formula:{src:'sophikart-formula.glb?v=modular-release-r1',prefix:'formula',step:'Formula_Modular_Print_Kit.zip',count:11,title:'Formula',edition:'FORMULA',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Exposed wheels, a tapered nose and sculpted sidepods. The Formula exterior fits around the same 127 original chassis components.'},
+ rally:{src:'sophikart-rally.glb?v=modular-release-r1',prefix:'rally',step:'Rally_Modular_Print_Kit.zip',count:17,title:'Rally',edition:'RALLY',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Angular bodywork, flared wheel arches, and four auxiliary lamps. The original 127 mechanical components remain in their original positions.'},
+ retro:{src:'sophikart-retro.glb?v=modular-release-r1',prefix:'retro',step:'Retro_Modular_Print_Kit.zip',count:17,title:'Retro GT',edition:'RETRO GT',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Curved bodywork, round headlights, and a compact ducktail. A retro coupe shell around the same 127 original mechanical components.'}
 };
 let activeModel='track',failed=false,exploded=0,motionFrame=0,motionReady=false,cameraView='front',bodyworkHidden=false;
 const bodyworkToggle=document.querySelector('#bodywork-toggle');
-const paintChoices={};
-const defaultPaints={};
+let selectedPaint='#808080';
 const defaultFinishes={};
-let paintReady=false,paintMaterial=null,defaultPaint=null;
+let paintReady=false,paintMaterial=null;
 const paintButtons=[...document.querySelectorAll('[data-paint]')];
 function syncPaint(){
- const choice=paintChoices[activeModel]||null;
+ const choice=selectedPaint;
  paintButtons.forEach(button=>{
   button.disabled=!paintReady||failed;
   button.setAttribute('aria-pressed',String(choice===button.dataset.paint));
  });
- document.querySelector('#paint-default').disabled=!paintReady||failed||!choice;
- document.querySelector('#paint-name').textContent=choice?paintButtons.find(b=>b.dataset.paint===choice).dataset.colorName:({track:'Klein blue',formula:'Green',rally:'Red',retro:'Yellow',original:'Original orange'}[activeModel]);
+ document.querySelector('#paint-name').textContent=paintButtons.find(b=>b.dataset.paint===choice)?.dataset.colorName||'';
  
 }
 function applyPaint(){
- const choice=paintChoices[activeModel];
+ const choice=selectedPaint;
  if(paintMaterial){
   const pbr=paintMaterial.pbrMetallicRoughness;
   if(!defaultFinishes[activeModel])defaultFinishes[activeModel]={metal:pbr.metallicFactor??0,rough:pbr.roughnessFactor??.5};
-  pbr.setBaseColorFactor(choice||defaultPaint);
+  pbr.setBaseColorFactor(choice);
   const silver=choice==='#C0C0C0';
   pbr.setMetallicFactor(silver?.8:defaultFinishes[activeModel].metal);
   pbr.setRoughnessFactor(silver?.25:defaultFinishes[activeModel].rough);
  }
  syncPaint();
 }
-paintButtons.forEach(button=>button.addEventListener('click',()=>{paintChoices[activeModel]=button.dataset.paint;applyPaint();}));
-document.querySelector('#paint-default').addEventListener('click',()=>{paintChoices[activeModel]=null;applyPaint();});
+paintButtons.forEach(button=>button.addEventListener('click',()=>{selectedPaint=button.dataset.paint;applyPaint();}));
 function syncBodywork(){
  bodyworkToggle.textContent=bodyworkHidden?'Show bodywork':'Hide bodywork';
  bodyworkToggle.setAttribute('aria-pressed',String(bodyworkHidden));
@@ -165,7 +162,7 @@ document.querySelectorAll('[data-concept]').forEach(button=>button.addEventListe
 }));
 document.querySelectorAll('[data-camera]').forEach(button=>button.addEventListener('click',()=>setCamera(button.dataset.camera)));
 document.querySelector('#explore').addEventListener('click',()=>{setCamera('front');car.focus();if(innerWidth<761)document.querySelector('.viewer-panel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});});
-car.addEventListener('load',()=>{status.hidden=true;document.querySelector('.progress-track').hidden=true;car.animationName='Exploded view';car.pause();motionReady=car.availableAnimations.includes('Exploded view');paintMaterial=bodyworkHidden?null:car.model?.getMaterialByName('Sophikart_Body_Paint')||null;if(paintMaterial&&!defaultPaints[activeModel])defaultPaints[activeModel]=[...paintMaterial.pbrMetallicRoughness.baseColorFactor];defaultPaint=defaultPaints[activeModel]||null;paintReady=!!paintMaterial||bodyworkHidden;applyPaint();applyExplosion(exploded);syncBodywork();car.jumpCameraToGoal?.();});
+car.addEventListener('load',()=>{status.hidden=true;document.querySelector('.progress-track').hidden=true;car.animationName='Exploded view';car.pause();motionReady=car.availableAnimations.includes('Exploded view');paintMaterial=bodyworkHidden?null:car.model?.getMaterialByName('Sophikart_Body_Paint')||null;paintReady=!!paintMaterial||bodyworkHidden;applyPaint();applyExplosion(exploded);syncBodywork();car.jumpCameraToGoal?.();});
 car.addEventListener('progress',event=>{document.querySelector('#load-progress').style.width=`${Math.round(event.detail.totalProgress*100)}%`;});
 function useFallback(){if(car.loaded)return;stopMotion();motionReady=false;syncMotion();failed=true;paintReady=false;syncPaint();syncBodywork();car.hidden=true;fallback.hidden=false;status.textContent='3D unavailable — showing CAD previews';document.querySelector('#orbit-hint').textContent='Use the buttons to explore each view';}
 car.addEventListener('error',useFallback);
