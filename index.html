@@ -6,10 +6,10 @@
   <title>Sophikart — Track</title>
   <meta name="description" content="Explore five Sophikart designs: Original, Track, Formula, Rally and Retro GT. Orbit the actual CAD models, inspect the chassis, compare concepts and download STEP assemblies.">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./brand-tokens.css"><link rel="stylesheet" href="./style.css?v=modular-m3-r2"><link rel="stylesheet" href="./brand.css?v=sm-r3">
+  <link rel="stylesheet" href="./brand-tokens.css"><link rel="stylesheet" href="./style.css?v=modular-m3-r2"><link rel="stylesheet" href="./brand.css?v=view-dropdown-r1">
   <script type="module" src="./assets/model-viewer.min.js"></script>
   <script src="./assembly.js?v=m3-r3" defer></script>
-  <script src="./app.js?v=color-choice-r1" defer></script>
+  <script src="./app.js?v=view-dropdown-r1" defer></script>
   <script src="./brand.js?v=sm-r1" defer></script>
 </head>
 <body>
@@ -52,8 +52,8 @@
     <img id="fallback" src="./assets/track_front.png" alt="Front CAD preview of Sophikart" hidden>
     <p id="viewer-status" class="viewer-status" role="status">Loading 3D model…</p>
     <div class="viewer-toolbar">
-     <div class="view-buttons" aria-label="Camera views">
-      <button data-camera="front" aria-pressed="true">Front</button><button data-camera="rear" aria-pressed="false">Rear</button><button data-camera="side" aria-pressed="false">Side</button>
+     <div class="view-buttons" role="group" aria-label="Camera controls">
+      <label class="view-dropdown" for="camera-view"><span>View</span><select id="camera-view" aria-label="Camera view"><option value="front">Front</option><option value="rear">Rear</option><option value="side">Side</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></label>
       <button data-camera="reset"><svg><use href="#reset"/></svg>Reset view</button>
      </div>
      <button id="bodywork-toggle" class="bodywork-toggle" aria-pressed="false" disabled>Hide bodywork</button>

@@ -4,3 +4,15 @@
 @media(max-width:760px){.page-shell{padding-inline:20px}.site-header{height:auto;min-height:125px;padding-block:18px;gap:15px}.wordmark .brand-logo{width:174px}.wordmark small{font-size:12px}.site-header .header-download{font-size:12px;padding:11px;gap:8px}.site-header nav{gap:14px}.site-header .nav-link{font-size:15px}.model-view{display:flex;min-height:0;max-height:none}.intro h1{font-size:46px}.intro{padding:26px 0 20px}.intro p{max-width:none}.viewer-panel{min-height:594px}.paint-controls small{font-size:13px}.model-selector button{font-size:14px;min-height:44px}.guidebook-card{grid-template-columns:1fr;gap:22px;padding:20px}.guidebook-card img{max-width:300px}.guidebook-card h2{font-size:26px}.assembly-bom p,.assembly-bom li{font-size:16px}.section-heading h1{font-size:42px}.specifications dd{font-size:32px}.specifications dt{font-size:13px}.theme-control{margin-block:5px}footer{font-size:13px;gap:12px}.assembly-link{font-size:15px}}@media(max-width:390px){.wordmark .brand-logo{width:154px}.site-header .header-download{font-size:11px;padding:10px;gap:6px}.intro h1{font-size:43px}}
 
 .paint-swatches button[data-paint="#C0C0C0"]{background:linear-gradient(135deg,#858585,#eeeeee 48%,#a0a0a0)}
+
+/* Camera controls: compact native selector, accessible focus, consistent contrast. */
+.view-dropdown{display:inline-flex;align-items:center;position:relative;gap:12px;border:1px solid var(--sm-control-border);border-radius:10px;padding-left:15px;min-height:44px;background:var(--sm-elevated);color:var(--sm-text);font:16px Arial,sans-serif;transition:border-color var(--sm-motion-fast)}
+.view-dropdown>span{color:var(--sm-muted);font-size:14px;pointer-events:none}
+.view-dropdown select{appearance:none;border:0;border-radius:9px;background:transparent;color:inherit;font:inherit;min-width:100px;min-height:44px;padding:11px 36px 11px 0;cursor:pointer;outline:none}
+.view-dropdown select option{background:var(--sm-elevated);color:var(--sm-text)}
+.view-dropdown>svg{position:absolute;right:12px;width:16px;height:16px;pointer-events:none}
+.view-dropdown:hover{border-color:var(--sm-brand)}
+.view-dropdown:focus-within{outline:3px solid var(--sm-brand);outline-offset:3px;border-color:var(--sm-brand)}
+.view-buttons button:hover,.view-buttons button:focus-visible{background:var(--sm-elevated);color:var(--sm-text);border-color:var(--sm-brand)}
+.viewer-toolbar .view-buttons{align-items:center;gap:10px}
+@media(max-width:760px){.view-dropdown{font-size:14px;gap:10px;padding-left:12px}.view-dropdown select{min-width:94px}.viewer-toolbar .view-buttons{flex-wrap:wrap;gap:8px}.view-buttons button{min-height:44px}}

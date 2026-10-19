@@ -102,6 +102,7 @@ function updateContext(name){
 function setCamera(name){
  if(name==='reset')car.fieldOfView='30deg';
  cameraView=name==='reset'?'front':name;
+ document.querySelector('#camera-view').value=cameraView;
  if(failed){fallback.src=`./assets/${models[activeModel].prefix}_${name==='reset'?'front':name}.png`;fallback.alt=`${name==='reset'?'Front':name} CAD preview of Sophikart ${activeModel}`;}
  else{const radius=(bodyworkHidden?85:activeModel==='formula'?85:105)+exploded*50;car.cameraOrbit=cameras[name].replace('105%',`${radius}%`);car.cameraTarget=exploded>0?`auto ${60+exploded*60}m auto`:'auto auto auto';if(name==='reset')requestAnimationFrame(()=>car.jumpCameraToGoal?.());else if(matchMedia('(prefers-reduced-motion: reduce)').matches)car.jumpCameraToGoal?.();}
  document.querySelectorAll('[data-camera]').forEach(button=>{if(button.dataset.camera!=='reset')button.setAttribute('aria-pressed',String(button.dataset.camera===(name==='reset'?'front':name)));});
@@ -168,3 +169,5 @@ function useFallback(){if(car.loaded)return;stopMotion();motionReady=false;syncM
 car.addEventListener('error',useFallback);
 setTimeout(()=>{if(!customElements.get('model-viewer'))useFallback();},12000);
 selectModel('track');navigate();
+
+document.querySelector('#camera-view').addEventListener('change',event=>setCamera(event.target.value));
