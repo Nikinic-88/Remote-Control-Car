@@ -2,6 +2,8 @@
 
 Sophikart by SophiMotion: an interactive RC car design website.
 
+Live website: https://nikinic-88.github.io/Remote-Control-Car/
+
 ## Run locally
 
 From this folder, run:
@@ -22,7 +24,7 @@ Open http://127.0.0.1:8980/. Keep the server running while browsing. An HTTP ser
 - An 18-page illustrated Retro GT assembly guidebook.
 - SophiMotion branding and light/dark/system appearance.
 
-The site uses plain HTML, CSS and JavaScript with a bundled model-viewer runtime. No build step or API credentials are required. Serve this folder unchanged on any compatible static host. This import does not configure GitHub Pages.
+The site uses plain HTML, CSS and JavaScript with a bundled model-viewer runtime. No build step or API credentials are required. GitHub Pages publishes the repository root from main; future pushes update the website automatically. You can also serve this folder unchanged on another compatible static host.
 
 ## CAD prototype status
 
