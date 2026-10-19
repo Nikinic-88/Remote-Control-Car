@@ -18,6 +18,7 @@ Open http://127.0.0.1:8980/. Keep the server running while browsing. An HTTP ser
 - Body color previews, camera views, exploded animation and a bodywork visibility toggle.
 - M3 panel joints, removable post clamps and separate headlight components.
 - Per-car download folders containing STEP assemblies, named STL print parts, fit coupons and verification reports.
+- Individual STEP part ZIPs: one printable body per STEP, including separate shell sections, clamp halves and lamp pieces. These are also included under individual-step/ in each complete print kit. Import the files separately, arrange/drop them onto the build plate, and select supports before slicing.
 - An 18-page illustrated Retro GT assembly guidebook.
 - SophiMotion branding and light/dark/system appearance.
 
