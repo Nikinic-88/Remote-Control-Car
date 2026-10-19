@@ -1,0 +1,10 @@
+SOPHIKART FORMULA CONCEPT 02
+
+New exterior only; original 128 retained components stay in their original positions.
+Original mechanics are attached using their original STEP entity definitions.
+Exposed original wheels, hollow sidepods, tapered nose, cockpit frame, front and rear wings.
+Original camera and antenna remain visible through clearance openings.
+Wheelbase: 209.4 mm. Shell loft inset: 2.2 mm (not certified uniform wall thickness).
+Static hardware clearance uses original bounding boxes expanded by 1 mm.
+Manufacturing, mounts, steering sweep, suspension travel and aero performance require validation.
+Uniform green finish: MEV_Formula_Green_02.step and Formula_Exterior_Green_02.step. Color-only changes preserve all geometry. Website exploded animation is display-only; CAD remains assembled.

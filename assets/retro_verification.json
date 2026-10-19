@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "failures": [],
+  "source_unchanged": true,
+  "preserved_components_checked": 128,
+  "new_components_checked": 22,
+  "maximum_preserved_bounds_error_mm": 0.0,
+  "maximum_preserved_volume_error_mm3": 0.0,
+  "static_overlaps": [],
+  "assembly_instances": 150,
+  "step_bytes": 13897222
+}

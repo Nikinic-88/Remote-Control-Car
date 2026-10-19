@@ -1,0 +1,1186 @@
+{
+  "model": "retro",
+  "title": "Retro GT",
+  "revision": "M3 PLA fit-test prototype",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "Retro_Rear_Module",
+      "role": "shell",
+      "bounds": [
+        -186.0000001000002,
+        -100.47554549539039,
+        2.68740668069964,
+        -57.998601309576785,
+        100.45649535040268,
+        101.35149145027013
+      ],
+      "size_mm": [
+        128.00139879042342,
+        200.93204084579307,
+        98.6640847695705
+      ],
+      "volume_mm3": 126860.6885617719,
+      "solid_count": 1,
+      "stl": "Retro_Rear_Module.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Middle_Module",
+      "role": "shell",
+      "bounds": [
+        -61.52212310429631,
+        -100.00000011221708,
+        3.252440541165973,
+        62.001398690423215,
+        100.00000011221708,
+        108.03111730891607
+      ],
+      "size_mm": [
+        123.52352179471953,
+        200.00000022443416,
+        104.7786767677501
+      ],
+      "volume_mm3": 99634.0982060615,
+      "solid_count": 1,
+      "stl": "Retro_Middle_Module.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Front_Module",
+      "role": "shell",
+      "bounds": [
+        59.89487391844346,
+        -100.17833977741677,
+        1.4999998999997606,
+        187.0000001000002,
+        100.17948893714654,
+        77.10113092969696
+      ],
+      "size_mm": [
+        127.10512618155673,
+        200.3578287145633,
+        75.6011310296972
+      ],
+      "volume_mm3": 71827.52193127638,
+      "solid_count": 1,
+      "stl": "Retro_Front_Module.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_1_Outer",
+      "role": "clamp",
+      "bounds": [
+        159.29789572819655,
+        -46.75000010000003,
+        24.997895728196546,
+        171.00000010000002,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.9516711827837,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_1_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_1_Inner",
+      "role": "clamp",
+      "bounds": [
+        146.99881109814027,
+        -46.75000010000003,
+        24.997895728196546,
+        158.70210427180345,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.164055024115,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_1_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_2_Outer",
+      "role": "clamp",
+      "bounds": [
+        159.29789572819655,
+        18.74999989999997,
+        24.997895728196546,
+        171.00000010000002,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.9516711827837,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_2_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_2_Inner",
+      "role": "clamp",
+      "bounds": [
+        146.99881109814027,
+        18.74999989999997,
+        24.997895728196546,
+        158.70210427180345,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.164055024115,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_2_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_3_Outer",
+      "role": "clamp",
+      "bounds": [
+        -171.00000010000002,
+        -46.75000010000003,
+        24.997895728196546,
+        -159.29789572819655,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.951671182788,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_3_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_3_Inner",
+      "role": "clamp",
+      "bounds": [
+        -158.70210427180345,
+        -46.75000010000003,
+        24.997895728196546,
+        -146.99881109814027,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.1640550241154,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_3_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_4_Outer",
+      "role": "clamp",
+      "bounds": [
+        -171.00000010000002,
+        18.74999989999997,
+        24.997895728196546,
+        -159.29789572819655,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.9516711827873,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_4_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Clamp_4_Inner",
+      "role": "clamp",
+      "bounds": [
+        -158.70210427180345,
+        18.74999989999997,
+        24.997895728196546,
+        -146.99881109814027,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.1640550241154,
+      "solid_count": 1,
+      "stl": "Retro_Clamp_4_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Retro_Headlamp_Housing_L",
+      "role": "lamp_housing",
+      "color_rgb": [
+        0.025,
+        0.03,
+        0.04
+      ],
+      "bounds": [
+        139.7999998,
+        49.609637339847836,
+        21.0,
+        182.02827397066022,
+        78.2000002010295,
+        57.200000200000076
+      ],
+      "size_mm": [
+        42.22827417066023,
+        28.59036286118166,
+        36.200000200000076
+      ],
+      "volume_mm3": 3778.1725174807425,
+      "solid_count": 1,
+      "stl": "Retro_Headlamp_Housing_L.stl",
+      "orientation": "As modeled, Z up. Arrange/drop to bed and choose supports in Bambu Studio."
+    },
+    {
+      "name": "Retro_Headlamp_Lens_L",
+      "role": "lamp_lens",
+      "color_rgb": [
+        0.92,
+        0.94,
+        0.94
+      ],
+      "bounds": [
+        166.02414802839326,
+        53.0,
+        23.0,
+        178.47585207160674,
+        77.0,
+        53.00000009999997
+      ],
+      "size_mm": [
+        12.451704043213482,
+        24.0,
+        30.000000099999973
+      ],
+      "volume_mm3": 1204.6817472150428,
+      "solid_count": 1,
+      "stl": "Retro_Headlamp_Lens_L.stl",
+      "orientation": "As modeled, Z up. Arrange/drop to bed and choose supports in Bambu Studio."
+    },
+    {
+      "name": "Retro_Headlamp_Keeper_L",
+      "role": "lamp_keeper",
+      "color_rgb": [
+        0.025,
+        0.03,
+        0.04
+      ],
+      "bounds": [
+        170.299999894963,
+        53.0,
+        23.0,
+        173.30000010000256,
+        77.0,
+        31.00000010000024
+      ],
+      "size_mm": [
+        3.000000205039555,
+        24.0,
+        8.00000010000024
+      ],
+      "volume_mm3": 497.0254909267269,
+      "solid_count": 1,
+      "stl": "Retro_Headlamp_Keeper_L.stl",
+      "orientation": "As modeled, Z up. Arrange/drop to bed and choose supports in Bambu Studio."
+    },
+    {
+      "name": "Retro_Headlamp_Housing_R",
+      "role": "lamp_housing",
+      "color_rgb": [
+        0.025,
+        0.03,
+        0.04
+      ],
+      "bounds": [
+        139.79999979999994,
+        -78.20000020103556,
+        21.0,
+        182.02743049714545,
+        -49.60994468359809,
+        57.200000200000076
+      ],
+      "size_mm": [
+        42.22743069714551,
+        28.590055517437477,
+        36.200000200000076
+      ],
+      "volume_mm3": 3778.518253281386,
+      "solid_count": 1,
+      "stl": "Retro_Headlamp_Housing_R.stl",
+      "orientation": "As modeled, Z up. Arrange/drop to bed and choose supports in Bambu Studio."
+    },
+    {
+      "name": "Retro_Headlamp_Lens_R",
+      "role": "lamp_lens",
+      "color_rgb": [
+        0.92,
+        0.94,
+        0.94
+      ],
+      "bounds": [
+        166.02414802839326,
+        -77.0,
+        23.0,
+        178.4758520716068,
+        -53.0,
+        53.00000009999997
+      ],
+      "size_mm": [
+        12.451704043213539,
+        24.0,
+        30.000000099999973
+      ],
+      "volume_mm3": 1204.6817472159637,
+      "solid_count": 1,
+      "stl": "Retro_Headlamp_Lens_R.stl",
+      "orientation": "As modeled, Z up. Arrange/drop to bed and choose supports in Bambu Studio."
+    },
+    {
+      "name": "Retro_Headlamp_Keeper_R",
+      "role": "lamp_keeper",
+      "color_rgb": [
+        0.025,
+        0.03,
+        0.04
+      ],
+      "bounds": [
+        170.29999989496298,
+        -77.0,
+        23.0,
+        173.30000010000188,
+        -53.0,
+        31.000000100000218
+      ],
+      "size_mm": [
+        3.0000002050389014,
+        24.0,
+        8.000000100000218
+      ],
+      "volume_mm3": 497.0254909264809,
+      "solid_count": 1,
+      "stl": "Retro_Headlamp_Keeper_R.stl",
+      "orientation": "As modeled, Z up. Arrange/drop to bed and choose supports in Bambu Studio."
+    }
+  ],
+  "joints": [
+    {
+      "id": "Seam_1_R",
+      "x": -60,
+      "y": -85,
+      "z": 61,
+      "screw": "M3 x 12",
+      "quantity": 1,
+      "stack_mm": 8.3,
+      "key_diameter_mm": 4,
+      "key_clearance_mm": 0.3
+    },
+    {
+      "id": "Seam_1_L",
+      "x": -60,
+      "y": 85,
+      "z": 61,
+      "screw": "M3 x 12",
+      "quantity": 1,
+      "stack_mm": 8.3,
+      "key_diameter_mm": 4,
+      "key_clearance_mm": 0.3
+    },
+    {
+      "id": "Seam_2_R",
+      "x": 60,
+      "y": -85,
+      "z": 61,
+      "screw": "M3 x 12",
+      "quantity": 1,
+      "stack_mm": 8.3,
+      "key_diameter_mm": 4,
+      "key_clearance_mm": 0.3
+    },
+    {
+      "id": "Seam_2_L",
+      "x": 60,
+      "y": 85,
+      "z": 61,
+      "screw": "M3 x 12",
+      "quantity": 1,
+      "stack_mm": 8.3,
+      "key_diameter_mm": 4,
+      "key_clearance_mm": 0.3
+    }
+  ],
+  "mounts": [
+    {
+      "id": "Post_1",
+      "post_center": [
+        159,
+        -32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        167.5,
+        -32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": 159,
+          "y": -42.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": 159,
+          "y": -22.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        0.305479225642895,
+        1.6604448627744328
+      ]
+    },
+    {
+      "id": "Post_2",
+      "post_center": [
+        159,
+        32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        167.5,
+        32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": 159,
+          "y": 22.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": 159,
+          "y": 42.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        1.6604448627744137,
+        0.30547922564261604
+      ]
+    },
+    {
+      "id": "Post_3",
+      "post_center": [
+        -159,
+        -32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        -167.5,
+        -32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": -159,
+          "y": -42.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": -159,
+          "y": -22.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        12.10769946684068,
+        14.000000000000028
+      ]
+    },
+    {
+      "id": "Post_4",
+      "post_center": [
+        -159,
+        32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        -167.5,
+        32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": -159,
+          "y": 22.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": -159,
+          "y": 42.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        14.0,
+        12.107699466840831
+      ]
+    }
+  ],
+  "styling_connections": [],
+  "original_mechanics": 127,
+  "original_sha256": "c3ff3517f66d6abb792769fa3b30b640bd2032a2a3fd3426d618b79087772ee4",
+  "limits": [
+    "Print fit coupons before shells.",
+    "No physical load, steering, suspension or slicer validation yet.",
+    "Nominal existing cosmetic shell inset is 2.2 mm, not a minimum-wall guarantee."
+  ],
+  "seam_head_tool_relief_diameter_mm": 7.6,
+  "default_paint": {
+    "name": "Yellow",
+    "hex": "#FFFF00",
+    "screen_color_only": true
+  },
+  "lamp_revision": {
+    "hardware": [
+      {
+        "axis": "X",
+        "center": [
+          147,
+          58,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          144.2,
+          58,
+          27
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          150.7,
+          58,
+          27
+        ]
+      },
+      {
+        "axis": "X",
+        "center": [
+          147,
+          72,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          144.2,
+          72,
+          27
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          150.7,
+          72,
+          27
+        ]
+      },
+      {
+        "axis": "-X",
+        "center": [
+          171.8,
+          58,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          174.1,
+          58,
+          27
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          165.3,
+          58,
+          27
+        ]
+      },
+      {
+        "axis": "-X",
+        "center": [
+          171.8,
+          72,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          174.1,
+          72,
+          27
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          165.3,
+          72,
+          27
+        ]
+      },
+      {
+        "axis": "X",
+        "center": [
+          147,
+          -72,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          144.2,
+          -72,
+          27
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          150.7,
+          -72,
+          27
+        ]
+      },
+      {
+        "axis": "X",
+        "center": [
+          147,
+          -58,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          144.2,
+          -58,
+          27
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          150.7,
+          -58,
+          27
+        ]
+      },
+      {
+        "axis": "-X",
+        "center": [
+          171.8,
+          -72,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          174.1,
+          -72,
+          27
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          165.3,
+          -72,
+          27
+        ]
+      },
+      {
+        "axis": "-X",
+        "center": [
+          171.8,
+          -58,
+          27
+        ],
+        "screw": "M3 x 12",
+        "nut": "M3 hex, 5.8 mm AF pocket",
+        "washer": "M3",
+        "p": [
+          174.1,
+          -58,
+          27
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "length": 12,
+        "nut_start": [
+          165.3,
+          -58,
+          27
+        ]
+      }
+    ],
+    "assembly": [
+      "Print both housings and keepers in black and both lenses in white. Original visible light surfaces remain on the white parts.",
+      "Seat two M3 nuts in the rear pockets of each black lens seat. Place the white flange against the seat, fit the black keeper, and secure with two M3 x 12 screws and washers from the front.",
+      "Seat two M3 nuts in each cartridge plate. Attach each cartridge to the body receiver using two M3 x 12 screws and washers from the rear.",
+      "For lens service, remove the cartridge first, remove keeper screws and keeper, and lift the white lens out of its open seat. No glue or snap-fit is required."
+    ],
+    "bom": [
+      {
+        "item": "M3 x 12 socket screw",
+        "quantity": 8
+      },
+      {
+        "item": "M3 hex nut",
+        "quantity": 8
+      },
+      {
+        "item": "M3 washer",
+        "quantity": 8
+      }
+    ],
+    "mounts": [
+      {
+        "side": "L",
+        "cartridge_screws": [
+          {
+            "axis": "X",
+            "center": [
+              147,
+              58,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              144.2,
+              58,
+              27
+            ],
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              150.7,
+              58,
+              27
+            ]
+          },
+          {
+            "axis": "X",
+            "center": [
+              147,
+              72,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              144.2,
+              72,
+              27
+            ],
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              150.7,
+              72,
+              27
+            ]
+          }
+        ],
+        "lens_keeper_screws": [
+          {
+            "axis": "-X",
+            "center": [
+              171.8,
+              58,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              174.1,
+              58,
+              27
+            ],
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              165.3,
+              58,
+              27
+            ]
+          },
+          {
+            "axis": "-X",
+            "center": [
+              171.8,
+              72,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              174.1,
+              72,
+              27
+            ],
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              165.3,
+              72,
+              27
+            ]
+          }
+        ]
+      },
+      {
+        "side": "R",
+        "cartridge_screws": [
+          {
+            "axis": "X",
+            "center": [
+              147,
+              -72,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              144.2,
+              -72,
+              27
+            ],
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              150.7,
+              -72,
+              27
+            ]
+          },
+          {
+            "axis": "X",
+            "center": [
+              147,
+              -58,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              144.2,
+              -58,
+              27
+            ],
+            "direction": [
+              1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              150.7,
+              -58,
+              27
+            ]
+          }
+        ],
+        "lens_keeper_screws": [
+          {
+            "axis": "-X",
+            "center": [
+              171.8,
+              -72,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              174.1,
+              -72,
+              27
+            ],
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              165.3,
+              -72,
+              27
+            ]
+          },
+          {
+            "axis": "-X",
+            "center": [
+              171.8,
+              -58,
+              27
+            ],
+            "screw": "M3 x 12",
+            "nut": "M3 hex, 5.8 mm AF pocket",
+            "washer": "M3",
+            "p": [
+              174.1,
+              -58,
+              27
+            ],
+            "direction": [
+              -1,
+              0,
+              0
+            ],
+            "length": 12,
+            "nut_start": [
+              165.3,
+              -58,
+              27
+            ]
+          }
+        ]
+      }
+    ],
+    "lenses": [
+      {
+        "side": "L",
+        "original_visible_geometry": "Retro_Round_Headlamp_L",
+        "lens_flange_mm": [
+          3,
+          24,
+          8
+        ],
+        "keeper_mm": [
+          3,
+          24,
+          8
+        ],
+        "seat_to_lens_gap_mm": 0.3,
+        "lens_to_keeper_gap_mm": 0.3
+      },
+      {
+        "side": "R",
+        "original_visible_geometry": "Retro_Round_Headlamp_R",
+        "lens_flange_mm": [
+          3,
+          24,
+          8
+        ],
+        "keeper_mm": [
+          3,
+          24,
+          8
+        ],
+        "seat_to_lens_gap_mm": 0.3,
+        "lens_to_keeper_gap_mm": 0.3
+      }
+    ],
+    "removable": true,
+    "washer_thickness_mm": 0.8,
+    "limitations": [
+      "Fit-test prototypes. Calibrate clearances and nut pockets for your printer. No load, vibration, crash or dynamic durability guarantee.",
+      "0.3 mm flange and cartridge interface clearances; 3.4 mm bores; 5.8 mm AF x 2.6 mm nut pockets."
+    ],
+    "exterior_adaptations": [
+      {
+        "type": "paired_rounded_keeper_service_slots",
+        "centers_y_mm": [
+          -65,
+          65
+        ],
+        "center_z_mm": 27,
+        "width_mm": 27,
+        "height_mm": 13,
+        "cut_start_x_mm": 177.5,
+        "explanation": "A rounded service opening in each new front fascia joins the two keeper screw access paths, avoiding stranded cosmetic lip fragments. Original internals, receiver tabs, bearing bores and separate lamp parts are unchanged."
+      }
+    ]
+  },
+  "omitted_original_accessory": "MEV_ProSight_Antenna_FRAME_READY:1",
+  "wing_revision": {
+    "model": "retro",
+    "omitted_original": "MEV_ProSight_Antenna_FRAME_READY:1",
+    "retained_original_components": 127,
+    "rear_wing": "Continuous center span; original span and angle retained. No aerodynamic-performance claim.",
+    "restored_antenna_openings": true,
+    "added_volume_mm3": 21683.851362946254,
+    "bounds": [
+      -186.0000001000002,
+      -100.47554549539039,
+      2.68740668069964,
+      -57.998601309576785,
+      100.45649535040268,
+      101.35149145027013
+    ],
+    "valid": true,
+    "solid_count": 1
+  }
+}

@@ -1,0 +1,6 @@
+SOPHIKART ORIGINAL / CONCEPT 00 — ORANGE FINISH
+Original MEV2018 geometry with a uniform orange body and dark wheels and functional trim.
+All 143 original component shapes and positions remain unchanged.
+The colored STEP changes presentation styles only. The untouched supplied STEP also remains available.
+The website exploded view is display-only: exterior parts and wheels separate while the chassis stays fixed.
+Explode, Assemble, Pause and the slider do not change any STEP geometry.

@@ -1,0 +1,482 @@
+{
+  "model": "formula",
+  "title": "Formula",
+  "revision": "M3 PLA fit-test prototype",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "Formula_Rear_Module",
+      "role": "shell",
+      "bounds": [
+        -176.00000010000008,
+        -97.25000010000018,
+        3.435314760696049,
+        -136.99999989999992,
+        97.25000010000008,
+        111.50000010000008
+      ],
+      "size_mm": [
+        39.00000020000016,
+        194.50000020000027,
+        108.06468533930403
+      ],
+      "volume_mm3": 48817.04774739395,
+      "solid_count": 1,
+      "stl": "Formula_Rear_Module.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Middle_Module",
+      "role": "shell",
+      "bounds": [
+        -81.31853524769171,
+        -69.5000001000001,
+        0.5025328707083099,
+        60.49726847396597,
+        69.50000010000024,
+        95.00000013006222
+      ],
+      "size_mm": [
+        141.8158037216577,
+        139.00000020000033,
+        94.49746725935391
+      ],
+      "volume_mm3": 101864.71336415614,
+      "solid_count": 1,
+      "stl": "Formula_Middle_Module.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Front_Module",
+      "role": "shell",
+      "bounds": [
+        56.452982918333205,
+        -99.25000010000076,
+        0.9968431597331274,
+        201.00000010000392,
+        99.25000010000076,
+        77.00000010000002
+      ],
+      "size_mm": [
+        144.5470171816707,
+        198.50000020000152,
+        76.00315694026689
+      ],
+      "volume_mm3": 71706.91915748498,
+      "solid_count": 1,
+      "stl": "Formula_Front_Module.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_1_Outer",
+      "role": "clamp",
+      "bounds": [
+        159.29789572819655,
+        -46.75000010000003,
+        24.997895728196546,
+        171.00000010000002,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.9516711827837,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_1_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_1_Inner",
+      "role": "clamp",
+      "bounds": [
+        146.99881109814027,
+        -46.75000010000003,
+        24.997895728196546,
+        158.70210427180345,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.164055024115,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_1_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_2_Outer",
+      "role": "clamp",
+      "bounds": [
+        159.29789572819655,
+        18.74999989999997,
+        24.997895728196546,
+        171.00000010000002,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.9516711827837,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_2_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_2_Inner",
+      "role": "clamp",
+      "bounds": [
+        146.99881109814027,
+        18.74999989999997,
+        24.997895728196546,
+        158.70210427180345,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.164055024115,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_2_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_3_Outer",
+      "role": "clamp",
+      "bounds": [
+        -171.00000010000002,
+        -46.75000010000003,
+        24.997895728196546,
+        -159.29789572819655,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.951671182788,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_3_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_3_Inner",
+      "role": "clamp",
+      "bounds": [
+        -158.70210427180345,
+        -46.75000010000003,
+        24.997895728196546,
+        -146.99881109814027,
+        -18.74999989999997,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.1640550241154,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_3_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_4_Outer",
+      "role": "clamp",
+      "bounds": [
+        -171.00000010000002,
+        18.74999989999997,
+        24.997895728196546,
+        -159.29789572819655,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.702104371803472,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2683.9516711827873,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_4_Outer.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    },
+    {
+      "name": "Formula_Clamp_4_Inner",
+      "role": "clamp",
+      "bounds": [
+        -158.70210427180345,
+        18.74999989999997,
+        24.997895728196546,
+        -146.99881109814027,
+        46.75000010000003,
+        35.002104271803454
+      ],
+      "size_mm": [
+        11.703293173663184,
+        28.00000020000006,
+        10.004208543606907
+      ],
+      "volume_mm3": 2931.1640550241154,
+      "solid_count": 1,
+      "stl": "Formula_Clamp_4_Inner.stl",
+      "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
+    }
+  ],
+  "joints": [
+    {
+      "id": "Seam_2_R",
+      "x": 57.5,
+      "y": -19,
+      "z": 65,
+      "screw": "M3 x 12",
+      "quantity": 1,
+      "stack_mm": 8.3,
+      "key_diameter_mm": 4,
+      "key_clearance_mm": 0.3
+    },
+    {
+      "id": "Seam_2_L",
+      "x": 57.5,
+      "y": 19,
+      "z": 65,
+      "screw": "M3 x 12",
+      "quantity": 1,
+      "stack_mm": 8.3,
+      "key_diameter_mm": 4,
+      "key_clearance_mm": 0.3
+    }
+  ],
+  "mounts": [
+    {
+      "id": "Post_1",
+      "post_center": [
+        159,
+        -32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        167.5,
+        -32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": 159,
+          "y": -42.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": 159,
+          "y": -22.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        23.468139226661016,
+        16.963843826527274
+      ]
+    },
+    {
+      "id": "Post_2",
+      "post_center": [
+        159,
+        32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        167.5,
+        32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": 159,
+          "y": 22.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": 159,
+          "y": 42.75,
+          "z": 30.0,
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        16.963843826527384,
+        23.468139226661023
+      ]
+    },
+    {
+      "id": "Post_3",
+      "post_center": [
+        -159,
+        -32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        -167.5,
+        -32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": -159,
+          "y": -42.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": -159,
+          "y": -22.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        55.86866497378177,
+        56.317054624857136
+      ]
+    },
+    {
+      "id": "Post_4",
+      "post_center": [
+        -159,
+        32.75
+      ],
+      "post_diameter_mm": 6,
+      "bore_mm": 6.2,
+      "clamp_bottom_mm": 25,
+      "clamp_top_mm": 35,
+      "split_gap_mm": 0.6,
+      "service_axis": [
+        -167.5,
+        32.75
+      ],
+      "service_screw": "M3 x 16",
+      "clamp_screws": [
+        {
+          "x": -159,
+          "y": 22.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        },
+        {
+          "x": -159,
+          "y": 42.75,
+          "z": 30.0,
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "screw": "M3 x 25"
+        }
+      ],
+      "service_stack_mm": 14.3,
+      "root_gaps_mm": [
+        55.86866497378178,
+        56.317054624857136
+      ]
+    }
+  ],
+  "styling_connections": [],
+  "original_mechanics": 127,
+  "original_sha256": "c3ff3517f66d6abb792769fa3b30b640bd2032a2a3fd3426d618b79087772ee4",
+  "limits": [
+    "Print fit coupons before shells.",
+    "No physical load, steering, suspension or slicer validation yet.",
+    "Nominal existing cosmetic shell inset is 2.2 mm, not a minimum-wall guarantee."
+  ],
+  "seam_head_tool_relief_diameter_mm": 7.6,
+  "default_paint": {
+    "name": "Green",
+    "hex": "#34A853",
+    "screen_color_only": true
+  },
+  "omitted_original_accessory": "MEV_ProSight_Antenna_FRAME_READY:1",
+  "wing_revision": {
+    "model": "formula",
+    "omitted_original": "MEV_ProSight_Antenna_FRAME_READY:1",
+    "retained_original_components": 127,
+    "rear_wing": "Continuous center span; original span and angle retained. No aerodynamic-performance claim.",
+    "restored_antenna_openings": false,
+    "added_volume_mm3": 6021.138745044613,
+    "bounds": [
+      -176.00000010000008,
+      -97.25000010000018,
+      3.435314760696049,
+      -136.99999989999992,
+      97.25000010000008,
+      111.50000010000008
+    ],
+    "valid": true,
+    "solid_count": 1
+  }
+}

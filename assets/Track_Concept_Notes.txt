@@ -1,0 +1,44 @@
+MEV TRACK CONCEPT 01 - CAD APPEARANCE STUDY
+
+Purpose
+Translate the selected Track styling direction into solid CAD exterior geometry
+around the original MEV assembly. This is a styling review model, not a release
+for printing, molding, or machining.
+
+Deliverables
+MEV_Track_Concept_01.step: complete assembly with the redesigned exterior.
+Track_Exterior_Only.step: new exterior components in the original coordinates.
+track_front.png, track_rear.png, track_side.png: renders of actual CAD geometry.
+track_build_report.json: dimensions, component replacement list and build checks.
+track_verification.json: independent verification of the exported assembly.
+
+Scope
+Replace the original 11 exterior sections and 4 outer bumper sections.
+Keep original chassis, drivetrain, batteries, steering, suspension, wheels,
+body-support posts, and camera/antenna components in their existing positions.
+The tall original body-support posts remain visible. Their final length and
+fastening method need a separate design decision before manufacturing.
+
+Styling
+Sculpted GT nose; broad wheel arches; coupe cabin; dark window graphics;
+black side-intake panels; front splitter; ribbed rear trim; raised split wing.
+The wing has a central gap for the original antenna.
+Window, lamp and vent graphics are colored solid panels for appearance review.
+They do not represent installed lamps, actual glass, or verified cooling ducts.
+
+Geometry parameters
+Wheelbase: approximately 209.4 mm.
+Wheel-opening cutter radius: 39 mm versus approximately 33.5 mm tire radius.
+Shell loft inset: 2.2 mm. This is an approximate shell construction, not a
+guarantee of uniform wall thickness normal to every curved surface.
+Body-post clearance holes: 8 mm diameter, concept-level placement.
+
+Engineering limits
+Static solid overlap checks do not prove running clearance.
+Steering sweep, suspension travel, assembly tolerances, mounting brackets,
+fasteners, access for maintenance, printability and aerodynamic performance
+are not certified. Mounting holes alone are not a completed mounting design.
+The CAD shell is an interpretation of the reference image, not an exact
+reconstruction of that image or a dimensioned production design.
+Headlight revision: tapered dark housings and narrow white LED styling strips replace the blue panels. Exterior now contains 45 solids.
+Uniform blue finish: MEV_Track_Blue_01.step and Track_Exterior_Blue_01.step. Color-only changes preserve all geometry. Website exploded animation is display-only; CAD remains assembled.

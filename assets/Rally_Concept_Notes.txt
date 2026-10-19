@@ -1,0 +1,9 @@
+SOPHIKART RALLY CONCEPT 03
+
+Exterior-only replacement around 128 unchanged original mechanical instances.
+Uniform red finish. Wheelbase 209.4 mm.
+Original chassis, wheels, electronics, camera, antenna and mounting posts retained.
+Hollow loft shell, nominal inset 2.2 mm; static clearance uses original bounds expanded by 1 mm.
+Styling adapted from approved board to fixed chassis; not an exact image reconstruction.
+Browser animation and bodywork visibility do not change the STEP geometry.
+Mounting, steering/suspension travel and manufacturing tolerances require validation.

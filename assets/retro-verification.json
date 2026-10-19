@@ -1,0 +1,24 @@
+{
+  "model": "retro",
+  "original_sha256": "c3ff3517f66d6abb792769fa3b30b640bd2032a2a3fd3426d618b79087772ee4",
+  "retained_original_STEP_records_identical": true,
+  "retained_mechanical_instances": 127,
+  "omitted_original_external_accessory": "MEV_ProSight_Antenna_FRAME_READY:1",
+  "printed_parts": 17,
+  "valid_connected_solids": true,
+  "all_parts_below_230mm": true,
+  "new_print_parts_nonintersecting": true,
+  "max_original_bounds_error_mm": 0,
+  "max_original_volume_error_mm3": 0,
+  "fit_and_load_testing_required": true,
+  "hardware_checks": {
+    "model": "retro",
+    "static_reference_hardware_intersections": [],
+    "simplified_unthreaded_hardware": true
+  },
+  "print_clearance_checks": {
+    "model": "retro",
+    "printed_part_original_mechanics_intersections": [],
+    "original_mechanical_instances": 127
+  }
+}
