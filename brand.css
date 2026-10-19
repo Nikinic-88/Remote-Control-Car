@@ -5,14 +5,15 @@
 
 .paint-swatches button[data-paint="#C0C0C0"]{background:linear-gradient(135deg,#858585,#eeeeee 48%,#a0a0a0)}
 
-/* Camera controls: compact native selector, accessible focus, consistent contrast. */
-.view-dropdown{display:inline-flex;align-items:center;position:relative;gap:12px;border:1px solid var(--sm-control-border);border-radius:10px;padding-left:15px;min-height:44px;background:var(--sm-elevated);color:var(--sm-text);font:16px Arial,sans-serif;transition:border-color var(--sm-motion-fast)}
-.view-dropdown>span{color:var(--sm-muted);font-size:14px;pointer-events:none}
-.view-dropdown select{appearance:none;border:0;border-radius:9px;background:transparent;color:inherit;font:inherit;min-width:100px;min-height:44px;padding:11px 36px 11px 0;cursor:pointer;outline:none}
+/* Camera controls: balanced spacing and clear label/value separation. */
+.view-dropdown{display:inline-flex;align-items:center;position:relative;width:192px;min-height:48px;border:1px solid var(--sm-control-border);border-radius:12px;background:var(--sm-elevated);color:var(--sm-text);font:15px Arial,sans-serif;transition:border-color var(--sm-motion-fast),box-shadow var(--sm-motion-fast)}
+.view-dropdown>span{flex:none;padding:0 14px;border-right:1px solid var(--sm-border);color:var(--sm-muted);font-size:13px;line-height:20px;pointer-events:none}
+.view-dropdown select{appearance:none;flex:1;width:0;min-width:0;min-height:48px;margin:0;border:0;border-radius:11px;background:transparent;color:inherit;font:500 15px Arial,sans-serif;padding:12px 38px 12px 16px;cursor:pointer;outline:none}
 .view-dropdown select option{background:var(--sm-elevated);color:var(--sm-text)}
-.view-dropdown>svg{position:absolute;right:12px;width:16px;height:16px;pointer-events:none}
+.view-dropdown>svg{position:absolute;right:14px;width:16px;height:16px;pointer-events:none;color:var(--sm-muted)}
 .view-dropdown:hover{border-color:var(--sm-brand)}
-.view-dropdown:focus-within{outline:3px solid var(--sm-brand);outline-offset:3px;border-color:var(--sm-brand)}
+.view-dropdown:focus-within{outline:2px solid var(--sm-brand);outline-offset:3px;border-color:var(--sm-brand)}
+.viewer-toolbar .view-buttons{align-items:center;gap:12px}
+.view-buttons button{min-height:50px;padding:12px 16px;border-radius:12px;gap:8px;font-size:15px}
 .view-buttons button:hover,.view-buttons button:focus-visible{background:var(--sm-elevated);color:var(--sm-text);border-color:var(--sm-brand)}
-.viewer-toolbar .view-buttons{align-items:center;gap:10px}
-@media(max-width:760px){.view-dropdown{font-size:14px;gap:10px;padding-left:12px}.view-dropdown select{min-width:94px}.viewer-toolbar .view-buttons{flex-wrap:wrap;gap:8px}.view-buttons button{min-height:44px}}
+@media(max-width:760px){.view-dropdown{width:176px}.view-dropdown>span{padding-inline:12px}.view-dropdown select{padding-left:14px}.viewer-toolbar .view-buttons{flex-wrap:wrap;gap:12px}.view-buttons button{min-height:50px;padding:12px 14px;font-size:14px}}
