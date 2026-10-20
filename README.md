@@ -35,3 +35,9 @@ Color choices change the browser preview and carry across all car concepts. Capt
 ## Track STEP correction — 20 October 2026
 
 The Track print kit now contains a cleaned `Track_Modular_Complete.step`. Unused original shell and antenna representation records were removed to avoid extra geometry appearing during STEP import. All 127 retained inner components and all 17 printable components preserve their geometry and positions. Export verification and import instructions are included in the ZIP. Open the complete assembly in a new Fusion document; use `individual-step/` for separate print bodies. CAD importer checks pass; confirmation in Fusion itself is still pending.
+
+## Smooth rear and camera interaction — 20 October 2026
+
+Track now has mounting-root ends trimmed flush with the rear deck and an intact spoiler blade. The rear deck retains post clearance and M3 screw access. A nominal short-leg hex-key envelope clears the shell and retained mechanics; physical tool access and PLA strength still require prototype checks. The viewer, preview images, complete kit, individual STEP ZIP and combined STEP ZIP share the revised geometry. All 127 original inner components remain unchanged.
+
+Exploded-view progress no longer resets the camera each frame. Dragging, zooming and animation work independently; explicit camera presets and Reset still select the requested view.

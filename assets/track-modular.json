@@ -20,7 +20,7 @@
         200.69384418492118,
         109.80947588304795
       ],
-      "volume_mm3": 103746.5874935348,
+      "volume_mm3": 103872.3704265106,
       "solid_count": 1,
       "stl": "Track_Rear_Module.stl",
       "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
@@ -1164,5 +1164,51 @@
     ],
     "valid": true,
     "solid_count": 1
+  },
+  "smooth_rear_revision": {
+    "exposed_root_excess_mm3": 0.0,
+    "missing_wing_material_mm3": 0.0,
+    "volume_change_mm3": 125.78293297580967,
+    "wing": "Unperforated original blade profile; retained posts end below the wing.",
+    "mounting": "Mount root ends trimmed flush to the styled deck. Original posts and deck access openings retained.",
+    "tool_access": "Use a short-leg 2.5 mm L hex key from beneath the wing for rear M3 service screws; prove access on the physical prototype.",
+    "nominal_hex_key_checks": [
+      {
+        "service_axis": [
+          -167.5,
+          -32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          72
+        ],
+        "handle_length_mm": 60,
+        "handle_direction": [
+          -1,
+          0,
+          0
+        ],
+        "printed_or_original_intersections": false
+      },
+      {
+        "service_axis": [
+          -167.5,
+          32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          72
+        ],
+        "handle_length_mm": 60,
+        "handle_direction": [
+          -1,
+          0,
+          0
+        ],
+        "printed_or_original_intersections": false
+      }
+    ]
   }
 }

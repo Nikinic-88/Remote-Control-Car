@@ -31,17 +31,63 @@
     "retained_geometry_records_verbatim": true,
     "original_file_unchanged": true,
     "fusion_application_tested": false,
-    "source_step_sha256": "c7b42cc2963f3554aa0bfaf6b0894e4bf449251583dd79b12eaa70bde86343a1",
-    "clean_step_sha256": "93e3ea3c66d425e743d9771c2abd67a7a13ff23e2167e6e2d406143d658fbcba"
+    "source_step_sha256": "765dbb13b353314aed8319bb710359e2de0b27dcf59e087c30ce1b1aee40e7c7",
+    "clean_step_sha256": "211212cb1b1cc58257a39c8ec90440eec6faa713c948803fdca9ae2600662182"
   },
   "step_record_cleanup": {
     "removed_records": 36154,
     "removed_orphan_assembly_relations": 16,
     "removed_orphan_representations": 32,
-    "remaining_records": 309802,
+    "remaining_records": 308449,
     "modified_records": [
       10
     ],
     "all_references_resolve": true
+  },
+  "smooth_rear_revision": {
+    "exposed_root_excess_mm3": 0.0,
+    "missing_wing_material_mm3": 0.0,
+    "volume_change_mm3": 125.78293297580967,
+    "wing": "Unperforated original blade profile; retained posts end below the wing.",
+    "mounting": "Mount root ends trimmed flush to the styled deck. Original posts and deck access openings retained.",
+    "tool_access": "Use a short-leg 2.5 mm L hex key from beneath the wing for rear M3 service screws; prove access on the physical prototype.",
+    "nominal_hex_key_checks": [
+      {
+        "service_axis": [
+          -167.5,
+          -32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          72
+        ],
+        "handle_length_mm": 60,
+        "handle_direction": [
+          -1,
+          0,
+          0
+        ],
+        "printed_or_original_intersections": false
+      },
+      {
+        "service_axis": [
+          -167.5,
+          32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          72
+        ],
+        "handle_length_mm": 60,
+        "handle_direction": [
+          -1,
+          0,
+          0
+        ],
+        "printed_or_original_intersections": false
+      }
+    ]
   }
 }

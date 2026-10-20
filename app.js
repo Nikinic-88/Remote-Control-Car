@@ -6,7 +6,7 @@ const fallback=document.querySelector('#fallback');
 const cameras={front:'45deg 65deg 105%',rear:'225deg 65deg 105%',side:'0deg 85deg 105%',reset:'45deg 65deg 105%'};
 const models={
  original:{src:'sophikart-original.glb?v=modular-release-r1',prefix:'original',step:'MEV_Original_Styled_00.step',count:15,title:'Original',edition:'ORIGINAL',heading:'Small scale.<br><em>Original</em><br>character.',description:'Original MEV2018 body panels, wheels and trim. All 143 components stay unchanged in shape and position.'},
- track:{src:'sophikart.glb?v=modular-release-r1',prefix:'track',step:'Track_Modular_Print_Kit.zip?v=clean-step-20261020',count:17,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight parts. The Track exterior retains 127 original chassis components.'},
+ track:{src:'sophikart.glb?v=smooth-rear-20261020',prefix:'track',step:'Track_Modular_Print_Kit.zip?v=smooth-rear-20261020',count:17,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight parts. The Track exterior retains 127 original chassis components.'},
  formula:{src:'sophikart-formula.glb?v=modular-release-r1',prefix:'formula',step:'Formula_Modular_Print_Kit.zip',count:11,title:'Formula',edition:'FORMULA',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Exposed wheels, a tapered nose and sculpted sidepods. The Formula exterior fits around the same 127 original chassis components.'},
  rally:{src:'sophikart-rally.glb?v=modular-release-r1',prefix:'rally',step:'Rally_Modular_Print_Kit.zip',count:17,title:'Rally',edition:'RALLY',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Angular bodywork, flared wheel arches, and four auxiliary lamps. The original 127 mechanical components remain in their original positions.'},
  retro:{src:'sophikart-retro.glb?v=modular-release-r1',prefix:'retro',step:'Retro_Modular_Print_Kit.zip',count:17,title:'Retro GT',edition:'RETRO GT',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Curved bodywork, round headlights, and a compact ducktail. A retro coupe shell around the same 127 original mechanical components.'}
@@ -73,7 +73,8 @@ function applyExplosion(value){
  exploded=Math.max(0,Math.min(1,value));
  if(motionReady){car.pause();car.currentTime=Math.min((car.duration||3)-.00001,exploded*(car.duration||3));}
  if(!failed)document.querySelector('#orbit-hint').textContent=bodyworkHidden?(exploded>0?'Bodywork hidden · Wheels separate · Chassis fixed':'Bodywork hidden · Drag to inspect chassis'):exploded>0?(activeModel==='original'?'Exterior + wheels separate · Chassis fixed':'Print modules + M3 hardware separate · Internals fixed'):'Drag to orbit · Scroll to zoom';
- setCamera(cameraView);syncMotion();
+ // Animation progress must not reapply a preset over a user's camera drag.
+ syncMotion();
 }
 function animateExplosion(target){
  if(!motionReady)return;
@@ -92,7 +93,7 @@ function animateExplosion(target){
 document.querySelector('#explode').addEventListener('click',()=>animateExplosion(1));
 document.querySelector('#assemble').addEventListener('click',()=>animateExplosion(0));
 document.querySelector('#pause-motion').addEventListener('click',stopMotion);
-explodeRange.addEventListener('input',()=>{const amount=Number(explodeRange.value)/100;stopMotion();applyExplosion(amount);requestAnimationFrame(()=>car.jumpCameraToGoal?.());});
+explodeRange.addEventListener('input',()=>{const amount=Number(explodeRange.value)/100;stopMotion();applyExplosion(amount);});
 function updateContext(name){
  document.querySelector('.header-download').href=`./assets/${models[name].step}`;
  document.querySelector('.header-download').setAttribute('aria-label',`Download ${models[name].title} ${name==='original'?'STEP':'print kit'}`);
