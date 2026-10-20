@@ -20,5 +20,28 @@
     "model": "track",
     "printed_part_original_mechanics_intersections": [],
     "original_mechanical_instances": 127
+  },
+  "clean_step_export": {
+    "model": "track",
+    "components": 144,
+    "retained_mechanical_instances": 127,
+    "solids": 164,
+    "max_placed_bounds_error_mm": 0.0,
+    "max_volume_error_mm3": 0.0,
+    "retained_geometry_records_verbatim": true,
+    "original_file_unchanged": true,
+    "fusion_application_tested": false,
+    "source_step_sha256": "c7b42cc2963f3554aa0bfaf6b0894e4bf449251583dd79b12eaa70bde86343a1",
+    "clean_step_sha256": "93e3ea3c66d425e743d9771c2abd67a7a13ff23e2167e6e2d406143d658fbcba"
+  },
+  "step_record_cleanup": {
+    "removed_records": 36154,
+    "removed_orphan_assembly_relations": 16,
+    "removed_orphan_representations": 32,
+    "remaining_records": 309802,
+    "modified_records": [
+      10
+    ],
+    "all_references_resolve": true
   }
 }

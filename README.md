@@ -31,3 +31,7 @@ The site uses plain HTML, CSS and JavaScript with a bundled model-viewer runtime
 The four redesigned assemblies preserve 127 original mechanical components and omit the unused external FPV antenna. The supplied original STEP remains unchanged. Track, Rally and Retro GT each contain 17 printed exterior parts; Formula contains 11. Each part's CAD envelope is below 230 mm. Static checks pass, but PLA tolerances, supports, fit, steering/suspension travel and load durability require physical testing before use.
 
 Color choices change the browser preview and carry across all car concepts. Captions describe the design independently of paint. Choose the filament color when printing the STEP parts.
+
+## Track STEP correction — 20 October 2026
+
+The Track print kit now contains a cleaned `Track_Modular_Complete.step`. Unused original shell and antenna representation records were removed to avoid extra geometry appearing during STEP import. All 127 retained inner components and all 17 printable components preserve their geometry and positions. Export verification and import instructions are included in the ZIP. Open the complete assembly in a new Fusion document; use `individual-step/` for separate print bodies. CAD importer checks pass; confirmation in Fusion itself is still pending.
