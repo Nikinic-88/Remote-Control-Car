@@ -10,7 +10,8 @@ async function selectAssembly(name){
  document.querySelector('#assembly-name').textContent=manifest.title;
  document.querySelector('#assembly-part-count').textContent=manifest.parts.length;
  document.querySelector('#assembly-retained-count').textContent=manifest.original_mechanics;
- if(typeof updateContext==='function')updateContext(name);
+ // Loading a hidden assembly table must not replace the active car's download.
+ if(location.hash==='#assembly'&&typeof updateContext==='function')updateContext(name);
  document.querySelector('#assembly-span').textContent=Math.max(...manifest.parts.flatMap(p=>p.size_mm)).toFixed(1)+' mm';
  document.querySelector('#assembly-description').textContent=name==='formula'?'Nose and front wing, center cover and sidepods, plus an independently mounted continuous rear wing carrier. Four two-piece post clamps.':'Front, middle and rear shell modules, four two-piece post clamps, and removable black headlight housings with separate white inserts and keepers.';
  document.querySelector('#assembly-kit').href=`./assets/${name[0].toUpperCase()+name.slice(1)}_Modular_Print_Kit.zip?v=front-smooth-20261020-r1`;
