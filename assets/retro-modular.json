@@ -62,7 +62,7 @@
         200.3578287145633,
         75.6011310296972
       ],
-      "volume_mm3": 71827.52193127638,
+      "volume_mm3": 71797.85979062378,
       "solid_count": 1,
       "stl": "Retro_Front_Module.stl",
       "orientation": "As modeled, Z up; supports required. Reorient and slice before printing."
@@ -1229,5 +1229,44 @@
       }
     ],
     "bearing_seats_unchanged": true
+  },
+  "smooth_front_revision": {
+    "exposed_front_root_excess_mm3": 0.0,
+    "root_window_excess_mm3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "removed_material_mm3": 29.662140652595554,
+    "bearing_seats_unchanged": true,
+    "headlight_parts_unchanged": true,
+    "nominal_driver_checks": [
+      {
+        "service_axis": [
+          167.5,
+          -32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          103.2
+        ],
+        "printed_or_original_intersections": false
+      },
+      {
+        "service_axis": [
+          167.5,
+          32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          103.2
+        ],
+        "printed_or_original_intersections": false
+      }
+    ],
+    "mounting": "Front root ends trimmed flush with the styled surface or down to bearing-seat height. Functional post pads, screws and access openings retained."
   }
 }

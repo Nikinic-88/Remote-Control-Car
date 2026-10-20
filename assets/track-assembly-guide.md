@@ -10,6 +10,8 @@ Rear wings/spoilers now have a continuous center span, with clearance for the ex
 
 Track rear revision: Unperforated original blade profile; retained posts end below the wing. Mount root ends trimmed flush to the styled deck. Original posts and deck access openings retained. Use a short-leg 2.5 mm L hex key from beneath the wing for rear M3 service screws; prove access on the physical prototype. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
 
+Front mount revision: exposed rib ends are trimmed flush with the shell surface or bearing-seat height. The post pads, M3 bearing seats, screw axes and separate lamp interfaces keep their fit. The nominal driver path above each front service screw is clear; verify actual driver reach and PLA strength on the prototype.
+
 
 ## Print parts
 

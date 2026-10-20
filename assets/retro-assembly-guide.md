@@ -10,6 +10,8 @@ Rear wings/spoilers now have a continuous center span, with clearance for the ex
 
 Retro GT rear revision: Low swept ducktail moved to the rear fascia behind the unchanged posts and service axes; no through-holes. Exposed mount ends trimmed; structural carrier ribs, clamp seats and original posts retained. Reach the rear M3 service screws with a short-leg 2.5 mm L hex key; prove fit and turning space on the physical prototype. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
 
+Front mount revision: exposed rib ends are trimmed flush with the shell surface or bearing-seat height. The post pads, M3 bearing seats, screw axes and separate lamp interfaces keep their fit. The nominal driver path above each front service screw is clear; verify actual driver reach and PLA strength on the prototype.
+
 
 ## Print parts
 

@@ -10,6 +10,8 @@ Rear wings/spoilers now have a continuous center span, with clearance for the ex
 
 Rally rear revision: Blade raised 1 mm, with no through-holes; unchanged posts clear beneath it. Exposed mount ends trimmed; structural carrier ribs, clamp seats and original posts retained. Reach the rear M3 service screws with a short-leg 2.5 mm L hex key; prove fit and turning space on the physical prototype. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
 
+Front mount revision: exposed rib ends are trimmed flush with the shell surface or bearing-seat height. The post pads, M3 bearing seats, screw axes and separate lamp interfaces keep their fit. The nominal driver path above each front service screw is clear; verify actual driver reach and PLA strength on the prototype.
+
 
 ## Print parts
 

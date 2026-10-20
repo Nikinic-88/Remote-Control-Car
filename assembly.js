@@ -5,7 +5,7 @@ async function selectAssembly(name){
  if(!['track','formula','rally','retro'].includes(name))name='track';
  assemblyModel=name;const request=++assemblyRequest;
  document.querySelectorAll('[data-assembly]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.assembly===name)));
- const manifest=assemblyCache[name]||(assemblyCache[name]=await fetch(`./assets/${name}-modular.json?v=all-smooth-20261020-r1`).then(r=>{if(!r.ok)throw Error('Part manifest unavailable');return r.json();}));
+ const manifest=assemblyCache[name]||(assemblyCache[name]=await fetch(`./assets/${name}-modular.json?v=front-smooth-20261020-r1`).then(r=>{if(!r.ok)throw Error('Part manifest unavailable');return r.json();}));
  if(request!==assemblyRequest)return;
  document.querySelector('#assembly-name').textContent=manifest.title;
  document.querySelector('#assembly-part-count').textContent=manifest.parts.length;
@@ -13,8 +13,8 @@ async function selectAssembly(name){
  if(typeof updateContext==='function')updateContext(name);
  document.querySelector('#assembly-span').textContent=Math.max(...manifest.parts.flatMap(p=>p.size_mm)).toFixed(1)+' mm';
  document.querySelector('#assembly-description').textContent=name==='formula'?'Nose and front wing, center cover and sidepods, plus an independently mounted continuous rear wing carrier. Four two-piece post clamps.':'Front, middle and rear shell modules, four two-piece post clamps, and removable black headlight housings with separate white inserts and keepers.';
- document.querySelector('#assembly-kit').href=`./assets/${name[0].toUpperCase()+name.slice(1)}_Modular_Print_Kit.zip?v=all-smooth-20261020-r1`;
- document.querySelector('#assembly-guide').href=`./assets/${name}-assembly-guide.md?v=all-smooth-20261020-r1`;
+ document.querySelector('#assembly-kit').href=`./assets/${name[0].toUpperCase()+name.slice(1)}_Modular_Print_Kit.zip?v=front-smooth-20261020-r1`;
+ document.querySelector('#assembly-guide').href=`./assets/${name}-assembly-guide.md?v=front-smooth-20261020-r1`;
  const seams=manifest.joints.length,lamps=manifest.lamp_revision?.hardware.length||0;
  document.querySelector('#assembly-bom').innerHTML=[[`M3 × 12 screws`,seams+lamps,lamps?'Panel seams + lamp retainers':'Panel seams'],['M3 × 25 screws',8,'Post clamps'],['M3 × 16 screws',4,'Shell service fixings'],['M3 hex nuts',seams+12+lamps,'Captive pockets'],['M3 plain washers',seams+12+lamps,lamps?'0.5 mm main fixings; 0.8 mm lamps':'Under screw heads']].map(r=>`<tr>${r.map(x=>`<td>${x}</td>`).join('')}</tr>`).join('');
  document.querySelector('#assembly-parts').innerHTML=manifest.parts.map(p=>`<tr><td>${p.name.replaceAll('_',' ')}</td><td>${p.size_mm.map(n=>n.toFixed(1)).join(' × ')}</td><td>${p.stl}</td></tr>`).join('');

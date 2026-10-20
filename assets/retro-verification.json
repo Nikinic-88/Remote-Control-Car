@@ -31,14 +31,14 @@
     "retained_geometry_records_verbatim": true,
     "original_file_unchanged": true,
     "fusion_application_tested": false,
-    "source_step_sha256": "00a997bd1b3436593ee0dd39b975ed89afaadcb96abbe271c5996d788d98661c",
-    "clean_step_sha256": "c3ac58ebf57d3c02b2c943de5c738c2d8138f3e779fb5d4e1db47623efa4d48a"
+    "source_step_sha256": "1994cb557e9c28fac597dedee84732c81ca2d50784f0d75f119130551e920a42",
+    "clean_step_sha256": "ed8ea1b06e208422e133f9dd63ca62ebedfa31d418688a6d4ab5d76692ebe566"
   },
   "step_record_cleanup": {
     "removed_records": 36154,
     "removed_orphan_assembly_relations": 16,
     "removed_orphan_representations": 32,
-    "remaining_records": 281254,
+    "remaining_records": 281810,
     "modified_records": [
       10
     ],
@@ -90,5 +90,44 @@
       }
     ],
     "bearing_seats_unchanged": true
+  },
+  "smooth_front_revision": {
+    "exposed_front_root_excess_mm3": 0.0,
+    "root_window_excess_mm3": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "removed_material_mm3": 29.662140652595554,
+    "bearing_seats_unchanged": true,
+    "headlight_parts_unchanged": true,
+    "nominal_driver_checks": [
+      {
+        "service_axis": [
+          167.5,
+          -32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          103.2
+        ],
+        "printed_or_original_intersections": false
+      },
+      {
+        "service_axis": [
+          167.5,
+          32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          103.2
+        ],
+        "printed_or_original_intersections": false
+      }
+    ],
+    "mounting": "Front root ends trimmed flush with the styled surface or down to bearing-seat height. Functional post pads, screws and access openings retained."
   }
 }
