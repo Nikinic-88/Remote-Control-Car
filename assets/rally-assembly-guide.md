@@ -8,6 +8,9 @@ The new exterior has 17 individually named, connected printed parts. The 127 ret
 
 Rear wings/spoilers now have a continuous center span, with clearance for the existing rear posts. Former antenna-only shell openings are restored. Original outer wing span and pitch are retained; no aerodynamic-performance improvement is asserted.
 
+Rally rear revision: Blade raised 1 mm, with no through-holes; unchanged posts clear beneath it. Exposed mount ends trimmed; structural carrier ribs, clamp seats and original posts retained. Reach the rear M3 service screws with a short-leg 2.5 mm L hex key; prove fit and turning space on the physical prototype. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
+
+
 ## Print parts
 
 | Part | X x Y x Z envelope, mm | Role |

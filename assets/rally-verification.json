@@ -20,5 +20,75 @@
     "model": "rally",
     "printed_part_original_mechanics_intersections": [],
     "original_mechanical_instances": 127
+  },
+  "clean_step_export": {
+    "model": "rally",
+    "components": 144,
+    "retained_mechanical_instances": 127,
+    "solids": 164,
+    "max_placed_bounds_error_mm": 0.0,
+    "max_volume_error_mm3": 0.0,
+    "retained_geometry_records_verbatim": true,
+    "original_file_unchanged": true,
+    "fusion_application_tested": false,
+    "source_step_sha256": "071ad5042fde2e989f29c9be9cbde82626ce8fde762c579b1d21d9ff8e7a2473",
+    "clean_step_sha256": "93e9baa222165403125c5d0bc89365465b2fe04c47dda6ebc94909d9b9f72f2a"
+  },
+  "step_record_cleanup": {
+    "removed_records": 36154,
+    "removed_orphan_assembly_relations": 16,
+    "removed_orphan_representations": 32,
+    "remaining_records": 225909,
+    "modified_records": [
+      10
+    ],
+    "all_references_resolve": true
+  },
+  "smooth_rear_revision": {
+    "exposed_root_excess_mm3": 0.0,
+    "missing_wing_material_mm3": 0.0,
+    "volume_change_mm3": 513.6925438040344,
+    "wing": "Blade raised 1 mm, with no through-holes; unchanged posts clear beneath it.",
+    "mounting": "Exposed mount ends trimmed; structural carrier ribs, clamp seats and original posts retained.",
+    "tool_access": "Reach the rear M3 service screws with a short-leg 2.5 mm L hex key; prove fit and turning space on the physical prototype.",
+    "nominal_hex_key_checks": [
+      {
+        "service_axis": [
+          -167.5,
+          -32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          72
+        ],
+        "handle_length_mm": 60,
+        "handle_direction": [
+          -1,
+          0,
+          0
+        ],
+        "printed_or_original_intersections": false
+      },
+      {
+        "service_axis": [
+          -167.5,
+          32.75
+        ],
+        "shaft_radius_mm": 1.8,
+        "shaft_z_mm": [
+          43.2,
+          72
+        ],
+        "handle_length_mm": 60,
+        "handle_direction": [
+          -1,
+          0,
+          0
+        ],
+        "printed_or_original_intersections": false
+      }
+    ],
+    "bearing_seats_unchanged": true
   }
 }

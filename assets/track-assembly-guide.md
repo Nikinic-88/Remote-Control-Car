@@ -8,7 +8,7 @@ The new exterior has 17 individually named, connected printed parts. The 127 ret
 
 Rear wings/spoilers now have a continuous center span, with clearance for the existing rear posts. Former antenna-only shell openings are restored. Original outer wing span and pitch are retained; no aerodynamic-performance improvement is asserted.
 
-Track rear revision: the mount supports finish flush with the styled deck, and the wing blade has no access holes. The original posts still pass through the deck. Reach the rear service screws from under the wing with a short-leg 2.5 mm L hex key. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
+Track rear revision: Unperforated original blade profile; retained posts end below the wing. Mount root ends trimmed flush to the styled deck. Original posts and deck access openings retained. Use a short-leg 2.5 mm L hex key from beneath the wing for rear M3 service screws; prove access on the physical prototype. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
 
 
 ## Print parts

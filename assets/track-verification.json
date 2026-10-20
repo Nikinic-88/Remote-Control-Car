@@ -31,14 +31,14 @@
     "retained_geometry_records_verbatim": true,
     "original_file_unchanged": true,
     "fusion_application_tested": false,
-    "source_step_sha256": "765dbb13b353314aed8319bb710359e2de0b27dcf59e087c30ce1b1aee40e7c7",
-    "clean_step_sha256": "211212cb1b1cc58257a39c8ec90440eec6faa713c948803fdca9ae2600662182"
+    "source_step_sha256": "b2e18b9ffde2265568f4be9f5680c8b3f197ec42793f06420c7518f57b36a796",
+    "clean_step_sha256": "11635d89e26c8104f26344f6e2be88833001815940fc5c9de3a336ed284c6495"
   },
   "step_record_cleanup": {
     "removed_records": 36154,
     "removed_orphan_assembly_relations": 16,
     "removed_orphan_representations": 32,
-    "remaining_records": 308449,
+    "remaining_records": 308271,
     "modified_records": [
       10
     ],
@@ -47,7 +47,7 @@
   "smooth_rear_revision": {
     "exposed_root_excess_mm3": 0.0,
     "missing_wing_material_mm3": 0.0,
-    "volume_change_mm3": 125.78293297580967,
+    "volume_change_mm3": 121.48772025333892,
     "wing": "Unperforated original blade profile; retained posts end below the wing.",
     "mounting": "Mount root ends trimmed flush to the styled deck. Original posts and deck access openings retained.",
     "tool_access": "Use a short-leg 2.5 mm L hex key from beneath the wing for rear M3 service screws; prove access on the physical prototype.",
@@ -88,6 +88,7 @@
         ],
         "printed_or_original_intersections": false
       }
-    ]
+    ],
+    "bearing_seats_unchanged": true
   }
 }

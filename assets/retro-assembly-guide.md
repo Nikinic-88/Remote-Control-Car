@@ -8,11 +8,14 @@ The new exterior has 17 individually named, connected printed parts. The 127 ret
 
 Rear wings/spoilers now have a continuous center span, with clearance for the existing rear posts. Former antenna-only shell openings are restored. Original outer wing span and pitch are retained; no aerodynamic-performance improvement is asserted.
 
+Retro GT rear revision: Low swept ducktail moved to the rear fascia behind the unchanged posts and service axes; no through-holes. Exposed mount ends trimmed; structural carrier ribs, clamp seats and original posts retained. Reach the rear M3 service screws with a short-leg 2.5 mm L hex key; prove fit and turning space on the physical prototype. A nominal tool envelope is checked in CAD; prove actual key reach and turning space on the PLA prototype.
+
+
 ## Print parts
 
 | Part | X x Y x Z envelope, mm | Role |
 |---|---|---|
-| Retro_Rear_Module | 128.0 x 200.9 x 98.7 | shell |
+| Retro_Rear_Module | 130.0 x 200.9 x 98.7 | shell |
 | Retro_Middle_Module | 123.5 x 200.0 x 104.8 | shell |
 | Retro_Front_Module | 127.1 x 200.4 x 75.6 | shell |
 | Retro_Clamp_1_Outer | 11.7 x 28.0 x 10.0 | clamp |

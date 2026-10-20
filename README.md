@@ -41,3 +41,9 @@ The Track print kit now contains a cleaned `Track_Modular_Complete.step`. Unused
 Track now has mounting-root ends trimmed flush with the rear deck and an intact spoiler blade. The rear deck retains post clearance and M3 screw access. A nominal short-leg hex-key envelope clears the shell and retained mechanics; physical tool access and PLA strength still require prototype checks. The viewer, preview images, complete kit, individual STEP ZIP and combined STEP ZIP share the revised geometry. All 127 original inner components remain unchanged.
 
 Exploded-view progress no longer resets the camera each frame. Dragging, zooming and animation work independently; explicit camera presets and Reset still select the requested view.
+
+## Rear cleanup across all four designs — 20 October 2026
+
+Track, Formula, Rally and Retro GT now share the rear cleanup. Exposed deck mounting-root ends are flush. Formula and Rally blades are raised 1 mm with connected support extensions, preserving clearance above the original posts. Retro GT has a low swept ducktail at the rear fascia, behind the post and screw axes. Spoiler blades have no through-holes. Functional post clearances, M3 screw access, clamp bearing seats and structural Formula carrier ribs remain. All 127 original inner components preserve their geometry and positions.
+
+The website models, CAD boards, complete print kits, separate single-body STEP ZIPs and combined 62-part ZIP contain matching revised rear parts. Complete assembly STEP files exclude leftover original shell records. Retro GT's 18-page illustrated guidebook is regenerated from the revised CAD. CAD checks include connected solids, part envelopes below 230 mm, static hardware and mechanical clearances, nominal hex-key access and STEP round trips. Native Fusion import and physical PLA fit, turning access and load tests remain pending.
