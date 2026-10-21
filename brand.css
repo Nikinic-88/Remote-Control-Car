@@ -37,3 +37,12 @@
  .site-header nav{grid-column:1/-1;grid-row:2;justify-self:start}
  .site-header .header-download{grid-column:1/-1;grid-row:3;justify-self:end}
 }
+
+/* Accessible icon buttons for Light, Dark and System appearance. */
+.site-header .theme-control{display:inline-flex;gap:2px;padding:3px;background:var(--sm-elevated);border:1px solid var(--sm-control-border);border-radius:12px}
+.theme-control button{display:grid;place-items:center;width:40px;height:40px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--sm-muted);cursor:pointer;transition:background var(--sm-motion-fast),color var(--sm-motion-fast)}
+.theme-control button svg{width:20px;height:20px;stroke-width:1.7;pointer-events:none}
+.theme-control button:hover{background:var(--sm-tint);color:var(--sm-text)}
+.theme-control button[aria-pressed=true]{background:var(--sm-brand);color:white}
+@media(pointer:coarse){.theme-control button{width:44px;height:44px}}
+@media(max-width:390px){.site-header{column-gap:8px}.site-header .wordmark .brand-logo{width:146px}}

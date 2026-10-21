@@ -65,3 +65,7 @@ Track, Rally and Retro GT window surfaces are already fused into their shell mod
 ## Header appearance selector and restored palette — 21 October 2026
 
 The System / Light / Dark selector is now at the top-right of the header, with separate responsive rows on small screens. Theme persistence is unchanged. Body colors use green #34A853, red #EA4335 and yellow #FBBC05, alongside Klein blue #002FA7 and the neutral options. Simple color labels remain; the Raize reference is removed. CAD and download assets are unchanged.
+
+## Appearance icons — 21 October 2026
+
+The top-right appearance control now has sun (Light), moon (Dark) and monitor (System) buttons. Each has an accessible name, tooltip and selected state. Existing saved preferences are preserved, including System following the device theme. Browser checks cover all three modes and reload persistence.
