@@ -31,8 +31,8 @@
     "retained_geometry_records_verbatim": true,
     "original_file_unchanged": true,
     "fusion_application_tested": false,
-    "source_step_sha256": "12d18a1ca556a8337e71433c4610b0baa9437387e0a8413c345cc849e4dc96a2",
-    "clean_step_sha256": "64a103a6b4bd43bc53d2b548c71d3d13470d57d0968b741ec4839a276caa4893"
+    "source_step_sha256": "816785e8a406e026f711303d71c1b1cc2903377b308cee89badd10868b2f8bca",
+    "clean_step_sha256": "01e8a84d689017966779a304a84cd5846a120f2eec67b2cc47bac56a396a7220"
   },
   "step_record_cleanup": {
     "removed_records": 36154,
@@ -129,5 +129,41 @@
       }
     ],
     "mounting": "Front root ends trimmed flush with the styled surface or down to bearing-seat height. Functional post pads, screws and access openings retained."
+  },
+  "window_revision": {
+    "revision": "Body-colored integral windows / optional black vinyl stickers",
+    "integral_shell_surfaces": true,
+    "separate_window_parts": 0,
+    "window_styling_regions": [
+      "Track_Windscreen_Graphic",
+      "Track_Rear_Window_Graphic",
+      "Track_Side_Window_R_Segment_01",
+      "Track_Side_Window_R_Segment_02",
+      "Track_Side_Window_L_Segment_01",
+      "Track_Side_Window_L_Segment_02"
+    ],
+    "existing_molded_contours_preserved": true,
+    "manufacturing_brep_sha256": {
+      "Track_Rear_Module": "7390799fa864c0da0937866e12d737b0f50bf85efb8592471416ffc1f1d43f44",
+      "Track_Middle_Module": "894986e7fb6c35f2fbdc2a186181c811de5ab9a05168404c7c06fe53a4254f3b",
+      "Track_Front_Module": "7af8f8606ce0a19b11ed0e55b8563cedd3cf24c0d52855ee4388c8388ad6c9b6",
+      "Track_Clamp_1_Outer": "f8f88754e8d310d24dbf60dba9940210f753f04e8e3bea51c5c962f129ff5c2f",
+      "Track_Clamp_1_Inner": "c2e43f69b14b1eeba980f035de7013d82aebb2c745d384eb3531ae7cbe8a5a75",
+      "Track_Clamp_2_Outer": "9d8daab139e66cad0cb168ae7f0aa558ef87b68b0de121d7cd1c65203abd035b",
+      "Track_Clamp_2_Inner": "2e2022dd1d3b920c10c808c70eb47b9233ff504616cc3f7ca483c39664aaa19c",
+      "Track_Clamp_3_Outer": "3ac3fda040d4a50883a18a225c10caa65dcd85bed67329afd182a37051b5dd64",
+      "Track_Clamp_3_Inner": "736072fe84e2150e3f7f80923efc0acb6ce2ee52559ac67da6c3df8e1d5a2256",
+      "Track_Clamp_4_Outer": "bfa56767032196d6ce99cc13a606160a1cf412879c88bf9ce9e8d9c1da7e8001",
+      "Track_Clamp_4_Inner": "768cfc9c3c79857be9f10af5acb418c116acba42997f80a998b11d4e5331291f",
+      "Track_Headlamp_Housing_L": "dfcc3214f1b2c42e3b3bdbea125235c961fc1a1c8f833c8b8381949d54f6a0a0",
+      "Track_Headlamp_Lens_L": "41fcaa954a9ef6e6d90f990f4dafca64163b8e2a19c800fe6c3d5b62ed7f7e47",
+      "Track_Headlamp_Keeper_L": "23aa583143d6bfb68fb02159b01608dc838989b1d7b7190cbcf6e058073b257f",
+      "Track_Headlamp_Housing_R": "5c8b2263ae1874f1525709058fbf8531774362121e806b317b1a9207802eb713",
+      "Track_Headlamp_Lens_R": "7743e2634a3dc683b1ef8ddfc00841467ceace6bff2153f4fec1cf8a66d06be1",
+      "Track_Headlamp_Keeper_R": "7754fcb4c5ffdaae0f26bb94f4abaae57d301d2ca9030a939bc155e89bcff8f4"
+    },
+    "geometry_changed": false,
+    "formula_open_cockpit_preserved": false,
+    "instructions": "Print each shell module in one body color. Optional black vinyl stickers follow the existing window contours. No window inserts or extra fasteners. Separate lamps unchanged."
   }
 }

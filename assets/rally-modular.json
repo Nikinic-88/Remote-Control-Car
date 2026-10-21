@@ -1250,5 +1250,39 @@
       }
     ],
     "mounting": "Front root ends trimmed flush with the styled surface or down to bearing-seat height. Functional post pads, screws and access openings retained."
+  },
+  "window_revision": {
+    "revision": "Body-colored integral windows / optional black vinyl stickers",
+    "integral_shell_surfaces": true,
+    "separate_window_parts": 0,
+    "window_styling_regions": [
+      "Rally_Windscreen",
+      "Rally_Rear_Window",
+      "Rally_Side_Window_R",
+      "Rally_Side_Window_L"
+    ],
+    "existing_molded_contours_preserved": true,
+    "manufacturing_brep_sha256": {
+      "Rally_Rear_Module": "3a0c68e2d6786ec81c212934da2f97fca231c69c47b525332c569106dcc97bb4",
+      "Rally_Middle_Module": "4affe5fc6277d21e2aa0ed3aa17e5ea1d0cdf23db0629d9b7860f9961afe26c7",
+      "Rally_Front_Module": "48dca4cf075a38c5aa31b96a2c18ef6cc2a78eeefb1d2442aa17f8b8170e4558",
+      "Rally_Clamp_1_Outer": "f8f88754e8d310d24dbf60dba9940210f753f04e8e3bea51c5c962f129ff5c2f",
+      "Rally_Clamp_1_Inner": "c2e43f69b14b1eeba980f035de7013d82aebb2c745d384eb3531ae7cbe8a5a75",
+      "Rally_Clamp_2_Outer": "9d8daab139e66cad0cb168ae7f0aa558ef87b68b0de121d7cd1c65203abd035b",
+      "Rally_Clamp_2_Inner": "2e2022dd1d3b920c10c808c70eb47b9233ff504616cc3f7ca483c39664aaa19c",
+      "Rally_Clamp_3_Outer": "3ac3fda040d4a50883a18a225c10caa65dcd85bed67329afd182a37051b5dd64",
+      "Rally_Clamp_3_Inner": "736072fe84e2150e3f7f80923efc0acb6ce2ee52559ac67da6c3df8e1d5a2256",
+      "Rally_Clamp_4_Outer": "bfa56767032196d6ce99cc13a606160a1cf412879c88bf9ce9e8d9c1da7e8001",
+      "Rally_Clamp_4_Inner": "768cfc9c3c79857be9f10af5acb418c116acba42997f80a998b11d4e5331291f",
+      "Rally_Headlamp_Housing_L": "9f83ae0bdc333dac3b734289f28d7b4bcb819280e602dff435c80aeb059b9173",
+      "Rally_Headlamp_Lens_L": "d1cc461889092cce9f8799a814e8673c1e316c8ee32a3cb2a9120b1c00d2768d",
+      "Rally_Headlamp_Keeper_L": "f82cb019902db1e0b0e9a1520fa30f98d903c9b76185bb6ee05ea4371b83aed9",
+      "Rally_Headlamp_Housing_R": "42a9034340f6452dbe18acb93de982c098411f6b0ffd756bc91ec2fee3a4bd28",
+      "Rally_Headlamp_Lens_R": "d133dd71c2a5b5cfb7090f97da4a753956c7cbed68e39fead57a08ba95486895",
+      "Rally_Headlamp_Keeper_R": "b673bde67a013b50f4f4bbb9473fae086ee1a15954c8868478450c369bd53a68"
+    },
+    "geometry_changed": false,
+    "formula_open_cockpit_preserved": false,
+    "instructions": "Print each shell module in one body color. Optional black vinyl stickers follow the existing window contours. No window inserts or extra fasteners. Separate lamps unchanged."
   }
 }

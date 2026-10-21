@@ -13,6 +13,10 @@ Track rear revision: Unperforated original blade profile; retained posts end bel
 Front mount revision: exposed rib ends are trimmed flush with the shell surface or bearing-seat height. The post pads, M3 bearing seats, screw axes and separate lamp interfaces keep their fit. The nominal driver path above each front service screw is clear; verify actual driver reach and PLA strength on the prototype.
 
 
+## Body-colored windows and optional stickers
+
+Window areas are integral surfaces of the shell modules. Print each shell module in one body color; there are no separate glazing inserts, window screws or window assembly steps. Keep the existing molded window contours as placement outlines for optional black vinyl stickers. Trim and fit stickers to the printed contours before applying them. Formula retains its open cockpit and has no enclosed window panels. Separate headlamp housings, lenses and keepers still use their specified colors.
+
 ## Print parts
 
 | Part | X x Y x Z envelope, mm | Role |

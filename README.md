@@ -57,3 +57,7 @@ Front mounting-rib ends are now trimmed flush with the styled shell surface or b
 The body-color selector uses turquoise (#149DA5), red (#C9252C) and warm yellow (#F2CC30), inspired by Toyota Raize's color range, alongside black, silver, white and grey. Klein blue stays exactly #002FA7. These are screen approximations, not Toyota paint-code matches. Selected colors carry across all five cars. CAD files, print kits and inner components are unchanged.
 
 Reference: https://www.toyota.com.ph/news/toyota-raize-launch
+
+## Integral body-colored windows — 21 October 2026
+
+Track, Rally and Retro GT window surfaces are already fused into their shell modules. The browser-only dark glass overlays have been removed so the windows follow the selected body color. Existing molded window contours remain for optional black vinyl stickers. Formula retains its open cockpit; no enclosed glazing is added. There are no separate window inserts or extra window fasteners. The four STEP assemblies, individual-body STEP ZIPs and print kits have been refreshed with matching instructions and verification. Printable B-rep geometry and all 127 retained inner components are unchanged. Separate headlamp parts retain their specified colors.

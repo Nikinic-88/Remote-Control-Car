@@ -564,5 +564,28 @@
       }
     ],
     "mounting": "Front root ends trimmed flush with the styled surface or down to bearing-seat height. Functional post pads, screws and access openings retained."
+  },
+  "window_revision": {
+    "revision": "Body-colored integral windows / optional black vinyl stickers",
+    "integral_shell_surfaces": true,
+    "separate_window_parts": 0,
+    "window_styling_regions": [],
+    "existing_molded_contours_preserved": true,
+    "manufacturing_brep_sha256": {
+      "Formula_Rear_Module": "ab8b4cfdba519e7627ff61bbaf6bfa4100a683f6c13f8fa50489d6305024f075",
+      "Formula_Middle_Module": "358d79eeff10ef163598c5d9d2c9e5491f5f8d205a93c239557ece9e58183fbf",
+      "Formula_Front_Module": "e5fc06b8626c2f655589296753cb03d297500e9bedacba29830ee5ca30e62fd7",
+      "Formula_Clamp_1_Outer": "f8f88754e8d310d24dbf60dba9940210f753f04e8e3bea51c5c962f129ff5c2f",
+      "Formula_Clamp_1_Inner": "c2e43f69b14b1eeba980f035de7013d82aebb2c745d384eb3531ae7cbe8a5a75",
+      "Formula_Clamp_2_Outer": "9d8daab139e66cad0cb168ae7f0aa558ef87b68b0de121d7cd1c65203abd035b",
+      "Formula_Clamp_2_Inner": "2e2022dd1d3b920c10c808c70eb47b9233ff504616cc3f7ca483c39664aaa19c",
+      "Formula_Clamp_3_Outer": "3ac3fda040d4a50883a18a225c10caa65dcd85bed67329afd182a37051b5dd64",
+      "Formula_Clamp_3_Inner": "736072fe84e2150e3f7f80923efc0acb6ce2ee52559ac67da6c3df8e1d5a2256",
+      "Formula_Clamp_4_Outer": "bfa56767032196d6ce99cc13a606160a1cf412879c88bf9ce9e8d9c1da7e8001",
+      "Formula_Clamp_4_Inner": "768cfc9c3c79857be9f10af5acb418c116acba42997f80a998b11d4e5331291f"
+    },
+    "geometry_changed": false,
+    "formula_open_cockpit_preserved": true,
+    "instructions": "Print each shell module in one body color. Optional black vinyl stickers follow the existing window contours. No window inserts or extra fasteners. Separate lamps unchanged."
   }
 }

@@ -1268,5 +1268,41 @@
       }
     ],
     "mounting": "Front root ends trimmed flush with the styled surface or down to bearing-seat height. Functional post pads, screws and access openings retained."
+  },
+  "window_revision": {
+    "revision": "Body-colored integral windows / optional black vinyl stickers",
+    "integral_shell_surfaces": true,
+    "separate_window_parts": 0,
+    "window_styling_regions": [
+      "Retro_Windscreen",
+      "Retro_Rear_Window",
+      "Retro_Side_Window_R_Segment_01",
+      "Retro_Side_Window_R_Segment_02",
+      "Retro_Side_Window_L_Segment_01",
+      "Retro_Side_Window_L_Segment_02"
+    ],
+    "existing_molded_contours_preserved": true,
+    "manufacturing_brep_sha256": {
+      "Retro_Rear_Module": "db241069a8118b62f2558b9b7f9770ab1060690cee14d72cc4c77b09efa78533",
+      "Retro_Middle_Module": "61b13c4cad6812b4109a7d14916dabe84b5ca22870cf8b67a8b1fc9cb6903a1d",
+      "Retro_Front_Module": "930d31cda9ce215a4c9c794c59ff0ee29929f1d3b7397c25b5a74339421c826f",
+      "Retro_Clamp_1_Outer": "f8f88754e8d310d24dbf60dba9940210f753f04e8e3bea51c5c962f129ff5c2f",
+      "Retro_Clamp_1_Inner": "c2e43f69b14b1eeba980f035de7013d82aebb2c745d384eb3531ae7cbe8a5a75",
+      "Retro_Clamp_2_Outer": "9d8daab139e66cad0cb168ae7f0aa558ef87b68b0de121d7cd1c65203abd035b",
+      "Retro_Clamp_2_Inner": "2e2022dd1d3b920c10c808c70eb47b9233ff504616cc3f7ca483c39664aaa19c",
+      "Retro_Clamp_3_Outer": "3ac3fda040d4a50883a18a225c10caa65dcd85bed67329afd182a37051b5dd64",
+      "Retro_Clamp_3_Inner": "736072fe84e2150e3f7f80923efc0acb6ce2ee52559ac67da6c3df8e1d5a2256",
+      "Retro_Clamp_4_Outer": "bfa56767032196d6ce99cc13a606160a1cf412879c88bf9ce9e8d9c1da7e8001",
+      "Retro_Clamp_4_Inner": "768cfc9c3c79857be9f10af5acb418c116acba42997f80a998b11d4e5331291f",
+      "Retro_Headlamp_Housing_L": "b2bee6b1c218b35483fdfd8d42fc46a3a965554c7f2935a2fb29cc3994600c46",
+      "Retro_Headlamp_Lens_L": "a6396c66d1cb3962a369b3fc021aea9c6a684786db5d509b7658d1cd3934f0b4",
+      "Retro_Headlamp_Keeper_L": "174a5b5fa44d2a127e6c16833a31997b4985146e89c40c58ac4988c8926793ae",
+      "Retro_Headlamp_Housing_R": "a8329c5cea73e7d700467d82b48cff50e1df2534a109a17e1df29e2aa6fadcdb",
+      "Retro_Headlamp_Lens_R": "ec0bb5f34f49730e1f2aadba6160e0729fc69f2fd53846fc26299788d6f6002c",
+      "Retro_Headlamp_Keeper_R": "68a5a374d2c1dde2b23bdb3166ccad4e7acdcb86cc33d67bf78e251e0b89ef17"
+    },
+    "geometry_changed": false,
+    "formula_open_cockpit_preserved": false,
+    "instructions": "Print each shell module in one body color. Optional black vinyl stickers follow the existing window contours. No window inserts or extra fasteners. Separate lamps unchanged."
   }
 }
