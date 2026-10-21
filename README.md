@@ -51,3 +51,9 @@ The website models, CAD boards, complete print kits, separate single-body STEP Z
 ## Front mount smoothing — 20 October 2026
 
 Front mounting-rib ends are now trimmed flush with the styled shell surface or bearing-seat height on Track, Formula, Rally and Retro GT. Functional pads, post clearances, M3 bearing seats and screw axes remain, with nominal driver access checked. The adjacent separate-color lamp pieces and their mounts are retained. All 127 original inner components keep their geometry and positions. Front modules remain individual connected print bodies; the website models, STEP/STL kits, per-car STEP ZIPs, combined ZIP and Retro GT guidebook match the updated CAD. Physical fit, driver turning access and PLA strength still require a prototype test.
+
+## Raize-inspired preview colors — 21 October 2026
+
+The body-color selector uses turquoise (#149DA5), red (#C9252C) and warm yellow (#F2CC30), inspired by Toyota Raize's color range, alongside black, silver, white and grey. Klein blue stays exactly #002FA7. These are screen approximations, not Toyota paint-code matches. Selected colors carry across all five cars. CAD files, print kits and inner components are unchanged.
+
+Reference: https://www.toyota.com.ph/news/toyota-raize-launch
