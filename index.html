@@ -6,7 +6,7 @@
   <title>Sophikart — Track</title>
   <meta name="description" content="Explore five Sophikart designs: Original, Track, Formula, Rally and Retro GT. Orbit the actual CAD models, inspect the chassis, compare concepts and download STEP assemblies.">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./brand-tokens.css"><link rel="stylesheet" href="./style.css?v=modular-m3-r2"><link rel="stylesheet" href="./brand.css?v=dropdown-spacing-r1">
+  <link rel="stylesheet" href="./brand-tokens.css"><link rel="stylesheet" href="./style.css?v=modular-m3-r2"><link rel="stylesheet" href="./brand.css?v=header-theme-20261021-r1">
   <script type="module" src="./assets/model-viewer.min.js"></script>
   <script src="./assembly.js?v=body-windows-20261021-r2" defer></script>
   <script src="./app.js?v=body-windows-20261021-r2" defer></script>
@@ -29,6 +29,7 @@
    <a href="#files" class="nav-link">Files</a>
   </nav>
   <a class="button orange header-download" href="./assets/Track_Modular_Print_Kit.zip?v=body-windows-20261021-r2" download><span>Download print kit</span><svg><use href="#arrow"/></svg></a>
+  <label class="theme-control"><span>Appearance</span><select id="site-theme" aria-label="Website appearance"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
  </header>
  <main id="main">
   <section id="model" class="view model-view" aria-label="Track model">
@@ -38,8 +39,8 @@
     <p id="model-description">A new exterior for the MEV RC platform. Explore the Track concept, from styling study to working CAD.</p>
     <div class="paint-controls" role="group" aria-label="Body paint colors">
      <div class="paint-label">Selected body color <span id="paint-name" role="status">Grey</span></div>
-     <div class="paint-swatches"><button data-paint="#002FA7" data-color-name="Klein blue" style="--paint:#002FA7" aria-label="Paint Klein blue" aria-pressed="false" disabled></button><button data-paint="#149DA5" data-color-name="Turquoise" style="--paint:#149DA5" aria-label="Paint Turquoise" aria-pressed="false" disabled></button><button data-paint="#C9252C" data-color-name="Red" style="--paint:#C9252C" aria-label="Paint Red" aria-pressed="false" disabled></button><button data-paint="#F2CC30" data-color-name="Yellow" style="--paint:#F2CC30" aria-label="Paint Yellow" aria-pressed="false" disabled></button><button data-paint="#000000" data-color-name="Black" style="--paint:#000000" aria-label="Paint Black" aria-pressed="false" disabled></button><button data-paint="#C0C0C0" data-color-name="Silver" style="--paint:#C0C0C0" aria-label="Paint Silver" aria-pressed="false" disabled></button><button data-paint="#FFFFFF" data-color-name="White" style="--paint:#FFFFFF" aria-label="Paint White" aria-pressed="false" disabled></button><button data-paint="#808080" data-color-name="Grey" style="--paint:#808080" aria-label="Paint Grey" aria-pressed="false" disabled></button></div>
-     <small>Raize-inspired colors plus Klein blue. Your choice carries across cars. Screen shades are approximate; choose matching filament. Redesigned windows print with the shell; black stickers are optional.</small>
+     <div class="paint-swatches"><button data-paint="#002FA7" data-color-name="Klein blue" style="--paint:#002FA7" aria-label="Paint Klein blue" aria-pressed="false" disabled></button><button data-paint="#34A853" data-color-name="Green" style="--paint:#34A853" aria-label="Paint Green" aria-pressed="false" disabled></button><button data-paint="#EA4335" data-color-name="Red" style="--paint:#EA4335" aria-label="Paint Red" aria-pressed="false" disabled></button><button data-paint="#FBBC05" data-color-name="Yellow" style="--paint:#FBBC05" aria-label="Paint Yellow" aria-pressed="false" disabled></button><button data-paint="#000000" data-color-name="Black" style="--paint:#000000" aria-label="Paint Black" aria-pressed="false" disabled></button><button data-paint="#C0C0C0" data-color-name="Silver" style="--paint:#C0C0C0" aria-label="Paint Silver" aria-pressed="false" disabled></button><button data-paint="#FFFFFF" data-color-name="White" style="--paint:#FFFFFF" aria-label="Paint White" aria-pressed="false" disabled></button><button data-paint="#808080" data-color-name="Grey" style="--paint:#808080" aria-label="Paint Grey" aria-pressed="false" disabled></button></div>
+     <small>Choose a body color. Your choice carries across cars. Screen shades are approximate; choose matching filament. Redesigned windows print with the shell; black stickers are optional.</small>
     </div>
     <button class="button dark" id="explore">Explore the model<svg><use href="#arrow"/></svg></button>
     <a href="#assembly" id="assembly-link" class="text-link assembly-link">Parts &amp; assembly <svg><use href="#arrow"/></svg></a>
@@ -118,6 +119,6 @@
   </section>
   <dl class="specifications"><div><dt>Wheelbase</dt><dd>209.4 <span>mm</span></dd></div><div><dt>Printed exterior parts</dt><dd>17</dd></div><div><dt>Preserved components</dt><dd>127</dd></div><div><dt>CAD format</dt><dd>STEP</dd></div></dl>
  </main>
- <footer><span>Sophikart by SophiMotion</span><label class="theme-control">Appearance <select id="site-theme" aria-label="Website appearance"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label><span>Modular PLA prototype <span class="dot">·</span> Physical fit tests required</span></footer>
+ <footer><span>Sophikart by SophiMotion</span><span>Modular PLA prototype <span class="dot">·</span> Physical fit tests required</span></footer>
 </div>
 </body></html>
