@@ -4,28 +4,15 @@
   "units": "mm",
   "exterior_only": true,
   "mounting_features_included": false,
-  "external_mount_root_cleanup": {
-    "Rear_Module": {
-      "removed_excess_mm3": 0.0008989937893295608,
-      "remaining_excess_mm3": 0.0
-    },
-    "Middle_Module": {
-      "removed_excess_mm3": 0.0,
-      "remaining_excess_mm3": 0.0
-    },
-    "Front_Module": {
-      "removed_excess_mm3": 0.0,
-      "remaining_excess_mm3": 0.0
-    }
-  },
+  "external_mount_root_cleanup": {},
   "parts": [
     {
       "name": "Track_Rear_Module",
       "role": "shell",
       "size_mm": [
-        187.0446988059289,
-        201.02368370031638,
-        110.00011443129786
+        187.1650454768564,
+        201.02368370031573,
+        110.00011443133214
       ],
       "step": "Track_Rear_Module.step",
       "stl": "Track_Rear_Module.stl"
@@ -34,9 +21,9 @@
       "name": "Track_Front_Module",
       "role": "shell",
       "size_mm": [
-        186.00257153438992,
-        198.56367476728224,
-        100.04222329893531
+        186.0025715343974,
+        198.5636747672823,
+        100.0212992753762
       ],
       "step": "Track_Front_Module.step",
       "stl": "Track_Front_Module.stl"
@@ -45,9 +32,9 @@
       "name": "Track_Headlamp_Housing_L",
       "role": "lamp_housing",
       "size_mm": [
-        36.126787541546946,
-        48.22860226357537,
-        25.290192868695378
+        36.12678754156494,
+        48.22860226358496,
+        25.29019286870556
       ],
       "step": "Track_Headlamp_Housing_L.step",
       "stl": "Track_Headlamp_Housing_L.stl"
@@ -56,9 +43,9 @@
       "name": "Track_Headlamp_Lens_L",
       "role": "lamp_lens",
       "size_mm": [
-        23.96388957242152,
-        30.50357563162592,
-        17.82272783177401
+        23.963889572462108,
+        30.50357563167111,
+        17.82272783177723
       ],
       "step": "Track_Headlamp_Lens_L.step",
       "stl": "Track_Headlamp_Lens_L.stl"
@@ -67,9 +54,9 @@
       "name": "Track_Headlamp_Housing_R",
       "role": "lamp_housing",
       "size_mm": [
-        36.021996444965595,
-        48.123811166994,
-        25.242132521621834
+        36.02199644501334,
+        48.12381116703336,
+        25.24213252159359
       ],
       "step": "Track_Headlamp_Housing_R.step",
       "stl": "Track_Headlamp_Housing_R.stl"
@@ -78,12 +65,78 @@
       "name": "Track_Headlamp_Lens_R",
       "role": "lamp_lens",
       "size_mm": [
-        23.963889571999175,
-        30.50357563120358,
-        17.822727828660568
+        23.963889572010913,
+        30.50357563122092,
+        17.822727828687164
       ],
       "step": "Track_Headlamp_Lens_R.step",
       "stl": "Track_Headlamp_Lens_R.stl"
+    },
+    {
+      "name": "Track_Rear_Window_Rear_Insert",
+      "role": "window_insert",
+      "size_mm": [
+        27.130580754149037,
+        95.20109140412288,
+        25.767075184608736
+      ],
+      "step": "Track_Rear_Window_Rear_Insert.step",
+      "stl": "Track_Rear_Window_Rear_Insert.stl"
+    },
+    {
+      "name": "Track_Side_Window_R_Segment_02_Rear_Insert",
+      "role": "window_insert",
+      "size_mm": [
+        60.647711515784685,
+        15.086000503862131,
+        25.773709515678732
+      ],
+      "step": "Track_Side_Window_R_Segment_02_Rear_Insert.step",
+      "stl": "Track_Side_Window_R_Segment_02_Rear_Insert.stl"
+    },
+    {
+      "name": "Track_Side_Window_L_Segment_01_Rear_Insert",
+      "role": "window_insert",
+      "size_mm": [
+        60.64771151343268,
+        15.14562538001202,
+        25.76790180929416
+      ],
+      "step": "Track_Side_Window_L_Segment_01_Rear_Insert.step",
+      "stl": "Track_Side_Window_L_Segment_01_Rear_Insert.stl"
+    },
+    {
+      "name": "Track_Windscreen_Front_Insert",
+      "role": "window_insert",
+      "size_mm": [
+        29.00672365765726,
+        97.3484307784291,
+        29.860441342058564
+      ],
+      "step": "Track_Windscreen_Front_Insert.step",
+      "stl": "Track_Windscreen_Front_Insert.stl"
+    },
+    {
+      "name": "Track_Side_Window_R_Segment_02_Front_Insert",
+      "role": "window_insert",
+      "size_mm": [
+        29.043299730021488,
+        11.806752136551104,
+        24.07328084110503
+      ],
+      "step": "Track_Side_Window_R_Segment_02_Front_Insert.step",
+      "stl": "Track_Side_Window_R_Segment_02_Front_Insert.stl"
+    },
+    {
+      "name": "Track_Side_Window_L_Segment_01_Front_Insert",
+      "role": "window_insert",
+      "size_mm": [
+        29.0433005052823,
+        11.780782010120134,
+        24.07646762180441
+      ],
+      "step": "Track_Side_Window_L_Segment_01_Front_Insert.step",
+      "stl": "Track_Side_Window_L_Segment_01_Front_Insert.stl"
     }
   ]
 }
