@@ -23,9 +23,9 @@
       "name": "Formula_Rear_Module",
       "role": "shell",
       "size_mm": [
-        83.88685030787019,
+        107.87903524573238,
         194.50000020000027,
-        108.0000002000024
+        109.52903524573235
       ],
       "step": "Formula_Rear_Module.step",
       "stl": "Formula_Rear_Module.stl"
@@ -34,9 +34,9 @@
       "name": "Formula_Middle_Module",
       "role": "shell",
       "size_mm": [
-        162.29178342422153,
+        130.02211215098788,
         139.00000020000033,
-        94.49746725935391
+        92.51378526387023
       ],
       "step": "Formula_Middle_Module.step",
       "stl": "Formula_Middle_Module.stl"
