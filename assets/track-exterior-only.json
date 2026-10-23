@@ -84,28 +84,6 @@
       "stl": "Track_Rear_Window_Rear_Insert.stl"
     },
     {
-      "name": "Track_Side_Window_R_Segment_02_Rear_Insert",
-      "role": "window_insert",
-      "size_mm": [
-        60.647711515784685,
-        15.086000503862131,
-        25.773709515678732
-      ],
-      "step": "Track_Side_Window_R_Segment_02_Rear_Insert.step",
-      "stl": "Track_Side_Window_R_Segment_02_Rear_Insert.stl"
-    },
-    {
-      "name": "Track_Side_Window_L_Segment_01_Rear_Insert",
-      "role": "window_insert",
-      "size_mm": [
-        60.64771151343268,
-        15.14562538001202,
-        25.76790180929416
-      ],
-      "step": "Track_Side_Window_L_Segment_01_Rear_Insert.step",
-      "stl": "Track_Side_Window_L_Segment_01_Rear_Insert.stl"
-    },
-    {
       "name": "Track_Windscreen_Front_Insert",
       "role": "window_insert",
       "size_mm": [
@@ -117,26 +95,26 @@
       "stl": "Track_Windscreen_Front_Insert.stl"
     },
     {
-      "name": "Track_Side_Window_R_Segment_02_Front_Insert",
+      "name": "Track_Side_Window_L_Insert",
       "role": "window_insert",
       "size_mm": [
-        29.043299730021488,
-        11.806752136551104,
-        24.07328084110503
+        88.58937280059718,
+        14.717711623217177,
+        25.350474771650397
       ],
-      "step": "Track_Side_Window_R_Segment_02_Front_Insert.step",
-      "stl": "Track_Side_Window_R_Segment_02_Front_Insert.stl"
+      "step": "Track_Side_Window_L_Insert.step",
+      "stl": "Track_Side_Window_L_Insert.stl"
     },
     {
-      "name": "Track_Side_Window_L_Segment_01_Front_Insert",
+      "name": "Track_Side_Window_R_Insert",
       "role": "window_insert",
       "size_mm": [
-        29.0433005052823,
-        11.780782010120134,
-        24.07646762180441
+        88.58937334101665,
+        14.71187460353839,
+        25.358674305610364
       ],
-      "step": "Track_Side_Window_L_Segment_01_Front_Insert.step",
-      "stl": "Track_Side_Window_L_Segment_01_Front_Insert.stl"
+      "step": "Track_Side_Window_R_Insert.step",
+      "stl": "Track_Side_Window_R_Insert.stl"
     }
   ]
 }
