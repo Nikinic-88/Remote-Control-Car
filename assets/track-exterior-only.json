@@ -1,0 +1,86 @@
+{
+  "model": "track",
+  "title": "Track",
+  "units": "mm",
+  "exterior_only": true,
+  "mounting_features_included": false,
+  "parts": [
+    {
+      "name": "Track_Rear_Module",
+      "role": "shell",
+      "size_mm": [
+        126.50139879042332,
+        200.69384418492118,
+        109.80947588304795
+      ],
+      "step": "Track_Rear_Module.step",
+      "stl": "Track_Rear_Module.stl"
+    },
+    {
+      "name": "Track_Middle_Module",
+      "role": "shell",
+      "size_mm": [
+        124.06546669185813,
+        200.0000002155162,
+        96.55347395436411
+      ],
+      "step": "Track_Middle_Module.step",
+      "stl": "Track_Middle_Module.stl"
+    },
+    {
+      "name": "Track_Front_Module",
+      "role": "shell",
+      "size_mm": [
+        125.00611479983127,
+        200.00000032405217,
+        73.00000026203156
+      ],
+      "step": "Track_Front_Module.step",
+      "stl": "Track_Front_Module.stl"
+    },
+    {
+      "name": "Track_Headlamp_Housing_L",
+      "role": "lamp_housing",
+      "size_mm": [
+        32.40000040000021,
+        42.40000040000005,
+        37.56731672658999
+      ],
+      "step": "Track_Headlamp_Housing_L.step",
+      "stl": "Track_Headlamp_Housing_L.stl"
+    },
+    {
+      "name": "Track_Headlamp_Lens_L",
+      "role": "lamp_lens",
+      "size_mm": [
+        25.41019717126605,
+        31.00000020000001,
+        33.80824524308198
+      ],
+      "step": "Track_Headlamp_Lens_L.step",
+      "stl": "Track_Headlamp_Lens_L.stl"
+    },
+    {
+      "name": "Track_Headlamp_Housing_R",
+      "role": "lamp_housing",
+      "size_mm": [
+        32.40000040000021,
+        42.400000400000025,
+        37.56731672658999
+      ],
+      "step": "Track_Headlamp_Housing_R.step",
+      "stl": "Track_Headlamp_Housing_R.stl"
+    },
+    {
+      "name": "Track_Headlamp_Lens_R",
+      "role": "lamp_lens",
+      "size_mm": [
+        25.410197171079687,
+        31.00000020000001,
+        33.80824524308298
+      ],
+      "step": "Track_Headlamp_Lens_R.step",
+      "stl": "Track_Headlamp_Lens_R.stl"
+    }
+  ]
+}

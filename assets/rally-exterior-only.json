@@ -1,0 +1,86 @@
+{
+  "model": "rally",
+  "title": "Rally",
+  "units": "mm",
+  "exterior_only": true,
+  "mounting_features_included": false,
+  "parts": [
+    {
+      "name": "Rally_Rear_Module",
+      "role": "shell",
+      "size_mm": [
+        128.0013987904233,
+        201.12770791529633,
+        105.79917382928116
+      ],
+      "step": "Rally_Rear_Module.step",
+      "stl": "Rally_Rear_Module.stl"
+    },
+    {
+      "name": "Rally_Middle_Module",
+      "role": "shell",
+      "size_mm": [
+        122.20934512988867,
+        200.00000020015239,
+        107.40000020007618
+      ],
+      "step": "Rally_Middle_Module.step",
+      "stl": "Rally_Middle_Module.stl"
+    },
+    {
+      "name": "Rally_Front_Module",
+      "role": "shell",
+      "size_mm": [
+        130.24490936637892,
+        201.10510680241634,
+        72.00000020008403
+      ],
+      "step": "Rally_Front_Module.step",
+      "stl": "Rally_Front_Module.stl"
+    },
+    {
+      "name": "Rally_Headlamp_Housing_L",
+      "role": "lamp_housing",
+      "size_mm": [
+        31.700000100000153,
+        31.477166268639834,
+        36.70000019999998
+      ],
+      "step": "Rally_Headlamp_Housing_L.step",
+      "stl": "Rally_Headlamp_Housing_L.stl"
+    },
+    {
+      "name": "Rally_Headlamp_Lens_L",
+      "role": "lamp_lens",
+      "size_mm": [
+        17.39527241809006,
+        24.0,
+        28.500000099999966
+      ],
+      "step": "Rally_Headlamp_Lens_L.step",
+      "stl": "Rally_Headlamp_Lens_L.stl"
+    },
+    {
+      "name": "Rally_Headlamp_Housing_R",
+      "role": "lamp_housing",
+      "size_mm": [
+        31.700000100000125,
+        31.47716626864024,
+        36.700000199999984
+      ],
+      "step": "Rally_Headlamp_Housing_R.step",
+      "stl": "Rally_Headlamp_Housing_R.stl"
+    },
+    {
+      "name": "Rally_Headlamp_Lens_R",
+      "role": "lamp_lens",
+      "size_mm": [
+        17.395272418090087,
+        24.0,
+        28.500000099999966
+      ],
+      "step": "Rally_Headlamp_Lens_R.step",
+      "stl": "Rally_Headlamp_Lens_R.stl"
+    }
+  ]
+}

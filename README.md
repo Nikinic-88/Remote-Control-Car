@@ -18,9 +18,9 @@ Open http://127.0.0.1:8980/. Keep the server running while browsing. An HTTP ser
 
 - Original, Track, Formula, Rally and Retro GT CAD viewers.
 - Body color previews, camera views, exploded animation and a bodywork visibility toggle.
-- M3 panel joints, removable post clamps and separate headlight components.
-- Per-car download folders containing STEP assemblies, named STL print parts, fit coupons and verification reports.
-- Individual STEP part ZIPs: one printable body per STEP, including separate shell sections, clamp halves and lamp pieces. These are also included under individual-step/ in each complete print kit. Import the files separately, arrange/drop them onto the build plate, and select supports before slicing.
+- Exterior-only downloadable STEP/STL kits for Track, Formula, Rally and Retro GT. Chassis, posts and mounting parts are omitted so the user can design their own mounts.
+- Per-car download folders with shell-only CAD packages; each ZIP contains an exterior STEP assembly plus individual STEP and STL parts.
+- A combined exterior-only download containing the four shell kits. Existing full modular packages remain in the repository, but the website links directly to the exterior-only files.
 - An 18-page illustrated Retro GT assembly guidebook.
 - SophiMotion branding and light/dark/system appearance.
 
@@ -28,7 +28,7 @@ The site uses plain HTML, CSS and JavaScript with a bundled model-viewer runtime
 
 ## CAD prototype status
 
-The four redesigned assemblies preserve 127 original mechanical components and omit the unused external FPV antenna. The supplied original STEP remains unchanged. Track, Rally and Retro GT each contain 17 printed exterior parts; Formula contains 11. Each part's CAD envelope is below 230 mm. Static checks pass, but PLA tolerances, supports, fit, steering/suspension travel and load durability require physical testing before use.
+The four exterior-only kits contain shell sections and visible lamp pieces, with no chassis, body posts, clamps, internal supports, lamp retainers or fasteners. Track, Rally and Retro GT each contain 7 exterior pieces; Formula contains 3. Shell openings from the prior chassis-fit geometry are retained for adapting to a new mounting design. The supplied original STEP remains unchanged. Each part's CAD envelope is below 230 mm. Static checks pass, but PLA tolerances, supports, fit, steering/suspension travel and load durability require physical testing before use.
 
 Color choices change the browser preview and carry across all car concepts. Captions describe the design independently of paint. Choose the filament color when printing the STEP parts.
 

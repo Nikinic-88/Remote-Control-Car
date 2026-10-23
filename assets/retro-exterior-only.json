@@ -1,0 +1,86 @@
+{
+  "model": "retro",
+  "title": "Retro GT",
+  "units": "mm",
+  "exterior_only": true,
+  "mounting_features_included": false,
+  "parts": [
+    {
+      "name": "Retro_Rear_Module",
+      "role": "shell",
+      "size_mm": [
+        130.0013987904232,
+        200.93204084579307,
+        98.6640847695705
+      ],
+      "step": "Retro_Rear_Module.step",
+      "stl": "Retro_Rear_Module.stl"
+    },
+    {
+      "name": "Retro_Middle_Module",
+      "role": "shell",
+      "size_mm": [
+        123.52352179471953,
+        200.00000022443416,
+        104.7786767677501
+      ],
+      "step": "Retro_Middle_Module.step",
+      "stl": "Retro_Middle_Module.stl"
+    },
+    {
+      "name": "Retro_Front_Module",
+      "role": "shell",
+      "size_mm": [
+        127.10512618155673,
+        200.3578287145633,
+        75.6011310296972
+      ],
+      "step": "Retro_Front_Module.step",
+      "stl": "Retro_Front_Module.stl"
+    },
+    {
+      "name": "Retro_Headlamp_Housing_L",
+      "role": "lamp_housing",
+      "size_mm": [
+        42.22827417066023,
+        28.59036286118166,
+        36.200000200000076
+      ],
+      "step": "Retro_Headlamp_Housing_L.step",
+      "stl": "Retro_Headlamp_Housing_L.stl"
+    },
+    {
+      "name": "Retro_Headlamp_Lens_L",
+      "role": "lamp_lens",
+      "size_mm": [
+        12.451704043213482,
+        24.0,
+        30.000000099999973
+      ],
+      "step": "Retro_Headlamp_Lens_L.step",
+      "stl": "Retro_Headlamp_Lens_L.stl"
+    },
+    {
+      "name": "Retro_Headlamp_Housing_R",
+      "role": "lamp_housing",
+      "size_mm": [
+        42.22743069714551,
+        28.590055517437477,
+        36.200000200000076
+      ],
+      "step": "Retro_Headlamp_Housing_R.step",
+      "stl": "Retro_Headlamp_Housing_R.stl"
+    },
+    {
+      "name": "Retro_Headlamp_Lens_R",
+      "role": "lamp_lens",
+      "size_mm": [
+        12.451704043213539,
+        24.0,
+        30.000000099999973
+      ],
+      "step": "Retro_Headlamp_Lens_R.step",
+      "stl": "Retro_Headlamp_Lens_R.stl"
+    }
+  ]
+}

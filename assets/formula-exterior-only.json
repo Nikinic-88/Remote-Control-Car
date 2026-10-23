@@ -1,0 +1,42 @@
+{
+  "model": "formula",
+  "title": "Formula",
+  "units": "mm",
+  "exterior_only": true,
+  "mounting_features_included": false,
+  "parts": [
+    {
+      "name": "Formula_Rear_Module",
+      "role": "shell",
+      "size_mm": [
+        39.00000020000016,
+        194.50000020000027,
+        108.06468533930403
+      ],
+      "step": "Formula_Rear_Module.step",
+      "stl": "Formula_Rear_Module.stl"
+    },
+    {
+      "name": "Formula_Middle_Module",
+      "role": "shell",
+      "size_mm": [
+        141.8158037216577,
+        139.00000020000033,
+        94.49746725935391
+      ],
+      "step": "Formula_Middle_Module.step",
+      "stl": "Formula_Middle_Module.stl"
+    },
+    {
+      "name": "Formula_Front_Module",
+      "role": "shell",
+      "size_mm": [
+        144.5470171816707,
+        198.50000020000152,
+        76.00315694026689
+      ],
+      "step": "Formula_Front_Module.step",
+      "stl": "Formula_Front_Module.stl"
+    }
+  ]
+}

@@ -6,10 +6,10 @@ const fallback=document.querySelector('#fallback');
 const cameras={front:'45deg 65deg 105%',rear:'225deg 65deg 105%',side:'0deg 85deg 105%',reset:'45deg 65deg 105%'};
 const models={
  original:{src:'sophikart-original.glb?v=modular-release-r1',prefix:'original',step:'MEV_Original_Styled_00.step',count:15,title:'Original',edition:'ORIGINAL',heading:'Small scale.<br><em>Original</em><br>character.',description:'Original MEV2018 body panels, wheels and trim. All 143 components stay unchanged in shape and position.'},
- track:{src:'sophikart.glb?v=body-windows-20261021-r2',prefix:'track',step:'Track_Modular_Print_Kit.zip?v=body-windows-20261021-r2',count:17,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight parts. The Track exterior retains 127 original chassis components.'},
- formula:{src:'sophikart-formula.glb?v=body-windows-20261021-r2',prefix:'formula',step:'Formula_Modular_Print_Kit.zip?v=body-windows-20261021-r2',count:11,title:'Formula',edition:'FORMULA',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Exposed wheels, a tapered nose and sculpted sidepods. The Formula exterior fits around the same 127 original chassis components.'},
- rally:{src:'sophikart-rally.glb?v=body-windows-20261021-r2',prefix:'rally',step:'Rally_Modular_Print_Kit.zip?v=body-windows-20261021-r2',count:17,title:'Rally',edition:'RALLY',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Angular bodywork, flared wheel arches, and four auxiliary lamps. The original 127 mechanical components remain in their original positions.'},
- retro:{src:'sophikart-retro.glb?v=body-windows-20261021-r2',prefix:'retro',step:'Retro_Modular_Print_Kit.zip?v=body-windows-20261021-r2',count:17,title:'Retro GT',edition:'RETRO GT',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Curved bodywork, round headlights, and a compact ducktail. A retro coupe shell around the same 127 original mechanical components.'}
+ track:{src:'sophikart.glb?v=exterior-only-20261023-r1',prefix:'track',step:'Track_Exterior_Only.zip?v=exterior-only-20261023-r1',count:7,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight pieces. Exterior shell only; chassis and mounting parts are omitted.'},
+ formula:{src:'sophikart-formula.glb?v=exterior-only-20261023-r1',prefix:'formula',step:'Formula_Exterior_Only.zip?v=exterior-only-20261023-r1',count:3,title:'Formula',edition:'FORMULA',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Tapered nose, sculpted sidepods and open cockpit. Exterior shell only; chassis and mounting parts are omitted.'},
+ rally:{src:'sophikart-rally.glb?v=exterior-only-20261023-r1',prefix:'rally',step:'Rally_Exterior_Only.zip?v=exterior-only-20261023-r1',count:7,title:'Rally',edition:'RALLY',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Angular bodywork, flared arches and separate auxiliary lamps. Exterior shell only; chassis and mounting parts are omitted.'},
+ retro:{src:'sophikart-retro.glb?v=exterior-only-20261023-r1',prefix:'retro',step:'Retro_Exterior_Only.zip?v=exterior-only-20261023-r1',count:7,title:'Retro GT',edition:'RETRO GT',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Curved coupe bodywork, round headlights and a compact ducktail. Exterior shell only; chassis and mounting parts are omitted.'}
 };
 let activeModel='track',failed=false,exploded=0,motionFrame=0,motionReady=false,cameraView='front',bodyworkHidden=false;
 const bodyworkToggle=document.querySelector('#bodywork-toggle');
@@ -40,13 +40,13 @@ function applyPaint(){
 }
 paintButtons.forEach(button=>button.addEventListener('click',()=>{selectedPaint=button.dataset.paint;applyPaint();}));
 function syncBodywork(){
- bodyworkToggle.textContent=bodyworkHidden?'Show bodywork':'Hide bodywork';
+ bodyworkToggle.hidden=activeModel!=='original';bodyworkToggle.textContent=bodyworkHidden?'Show bodywork':'Hide bodywork';
  bodyworkToggle.setAttribute('aria-pressed',String(bodyworkHidden));
  bodyworkToggle.disabled=!motionReady||failed;
 }
 function viewerSource(){
  const source=models[activeModel].src;
- return `./assets/${bodyworkHidden?source.replace('.glb','-chassis.glb'):source}`;
+ return `./assets/${bodyworkHidden&&activeModel==='original'?source.replace('.glb','-chassis.glb'):source}`;
 }
 function loadViewer(){
  stopMotion();motionReady=false;paintReady=false;paintMaterial=null;syncMotion();syncBodywork();syncPaint();
@@ -54,7 +54,7 @@ function loadViewer(){
  status.hidden=false;status.textContent=bodyworkHidden?'Loading internal assembly…':'Loading 3D model…';
  document.querySelector('.progress-track').hidden=false;
  document.querySelector('#load-progress').style.width='0%';
- car.alt=`Sophikart ${models[activeModel].title}: ${bodyworkHidden?'bodywork hidden; original chassis and wheels':'actual CAD exterior with the original chassis, wheels, camera'}`;
+ car.alt=`Sophikart ${models[activeModel].title}: ${activeModel==='original'?(bodyworkHidden?'bodywork hidden; original chassis and wheels':'original CAD assembly'):'exterior shell and visible lamp pieces only; chassis and mounting parts omitted'}`;
  car.src=viewerSource();
 }
 bodyworkToggle.addEventListener('click',()=>{bodyworkHidden=!bodyworkHidden;loadViewer();});
@@ -72,7 +72,7 @@ function stopMotion(){cancelAnimationFrame(motionFrame);motionFrame=0;syncMotion
 function applyExplosion(value){
  exploded=Math.max(0,Math.min(1,value));
  if(motionReady){car.pause();car.currentTime=Math.min((car.duration||3)-.00001,exploded*(car.duration||3));}
- if(!failed)document.querySelector('#orbit-hint').textContent=bodyworkHidden?(exploded>0?'Bodywork hidden · Wheels separate · Chassis fixed':'Bodywork hidden · Drag to inspect chassis'):exploded>0?(activeModel==='original'?'Exterior + wheels separate · Chassis fixed':'Print modules + M3 hardware separate · Internals fixed'):'Drag to orbit · Scroll to zoom';
+ if(!failed)document.querySelector('#orbit-hint').textContent=bodyworkHidden?'Bodywork hidden · Drag to inspect chassis':exploded>0?(activeModel==='original'?'Exterior + wheels separate · Chassis fixed':'Exterior shell modules + lamp pieces separate'):'Drag to orbit · Scroll to zoom';
  // Animation progress must not reapply a preset over a user's camera drag.
  syncMotion();
 }
@@ -96,16 +96,16 @@ document.querySelector('#pause-motion').addEventListener('click',stopMotion);
 explodeRange.addEventListener('input',()=>{const amount=Number(explodeRange.value)/100;stopMotion();applyExplosion(amount);});
 function updateContext(name){
  document.querySelector('.header-download').href=`./assets/${models[name].step}`;
- document.querySelector('.header-download').setAttribute('aria-label',`Download ${models[name].title} ${name==='original'?'STEP':'print kit'}`);
- document.querySelector('.header-download span').textContent=name==='original'?'Download STEP':'Download print kit';
- document.querySelector('footer > span:last-child').textContent=name==='original'?'Original geometry · Refined finish':'Modular PLA prototype · Physical fit tests required';
+ document.querySelector('.header-download').setAttribute('aria-label',`Download ${models[name].title} ${name==='original'?'STEP':'exterior-only files'}`);
+ document.querySelector('.header-download span').textContent=name==='original'?'Download STEP':'Download exterior';
+ document.querySelector('footer > span:last-child').textContent=name==='original'?'Original geometry · Refined finish':'Exterior-only CAD · Mounting left to you';
 }
 function setCamera(name){
  if(name==='reset')car.fieldOfView='30deg';
  cameraView=name==='reset'?'front':name;
  const cameraSelect=document.querySelector('#camera-view');
  if(cameraSelect)cameraSelect.value=cameraView;
- if(failed){fallback.src=`./assets/${models[activeModel].prefix}_${name==='reset'?'front':name}.png?v=body-windows-20261021-r2`;fallback.alt=`${name==='reset'?'Front':name} CAD preview of Sophikart ${activeModel}`;}
+ if(failed){fallback.src=`./assets/${models[activeModel].prefix}_${name==='reset'?'front':name}.png?v=exterior-only-20261023-r1`;fallback.alt=`${name==='reset'?'Front':name} CAD preview of Sophikart ${activeModel}`;}
  else{const radius=(bodyworkHidden?85:activeModel==='formula'?85:105)+exploded*50;car.cameraOrbit=cameras[name].replace('105%',`${radius}%`);car.cameraTarget=exploded>0?`auto ${60+exploded*60}m auto`:'auto auto auto';if(name==='reset')requestAnimationFrame(()=>car.jumpCameraToGoal?.());else if(matchMedia('(prefers-reduced-motion: reduce)').matches)car.jumpCameraToGoal?.();}
  document.querySelectorAll('[data-camera]').forEach(button=>{if(button.dataset.camera!=='reset')button.setAttribute('aria-pressed',String(button.dataset.camera===(name==='reset'?'front':name)));});
 }
@@ -120,23 +120,25 @@ function selectModel(name){
  document.querySelector('#model-edition').textContent=model.edition;
  syncPaint();
  document.querySelector('.header-download').href=`./assets/${model.step}`;
- document.querySelector('.header-download span').textContent=name==='original'?'Download STEP':'Download print kit';
+ document.querySelector('.header-download span').textContent=name==='original'?'Download STEP':'Download exterior';
  document.querySelector('#assembly-link').hidden=name==='original';
  document.querySelectorAll('[data-model]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.model===name)));
  const specs=document.querySelectorAll('.specifications div');
  specs[1].querySelector('dt').textContent=name==='original'?'Original exterior components':'Printed exterior parts';
  specs[1].querySelector('dd').textContent=model.count;
- specs[2].querySelector('dt').textContent=name==='original'?'Original components':'Preserved components';
- specs[2].querySelector('dd').textContent=name==='original'?143:127;
+ specs[2].querySelector('dt').textContent=name==='original'?'Original components':'Chassis & mounts';
+ specs[2].querySelector('dd').textContent=name==='original'?143:'Omitted';
  document.querySelector('#model').setAttribute('aria-label',`${model.title} CAD model`);
  if(changed){
+  if(name!=='original')bodyworkHidden=false;
+  syncBodywork();
   stopMotion();motionReady=false;exploded=0;syncMotion();
   failed=false;car.hidden=false;fallback.hidden=true;
   status.hidden=false;status.textContent='Loading 3D model…';
   document.querySelector('.progress-track').hidden=false;
   document.querySelector('#load-progress').style.width='0%';
   document.querySelector('#orbit-hint').innerHTML='Drag to orbit <span class="dot">·</span> Scroll to zoom';
-  car.poster=`./assets/${model.prefix}_front.png?v=body-windows-20261021-r2`;
+  car.poster=`./assets/${model.prefix}_front.png?v=exterior-only-20261023-r1`;
   fallback.src=car.poster;
   loadViewer();
   setCamera('front');
