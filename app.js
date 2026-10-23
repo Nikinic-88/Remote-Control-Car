@@ -6,10 +6,10 @@ const fallback=document.querySelector('#fallback');
 const cameras={front:'45deg 65deg 105%',rear:'225deg 65deg 105%',side:'0deg 85deg 105%',reset:'45deg 65deg 105%'};
 const models={
  original:{src:'sophikart-original.glb?v=modular-release-r1',prefix:'original',step:'MEV_Original_Styled_00.step',count:15,title:'Original',edition:'ORIGINAL',heading:'Small scale.<br><em>Original</em><br>character.',description:'Original MEV2018 body panels, wheels and trim. All 143 components stay unchanged in shape and position.'},
- track:{src:'sophikart.glb?v=exterior-only-20261023-r12',chassisSrc:'sophikart-chassis.glb?v=exterior-only-20261023-r12',fullSrc:'sophikart-track-full.glb?v=exterior-only-20261023-r12',prefix:'track',step:'Track_Exterior_Only.zip?v=exterior-only-20261023-r12',count:7,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight pieces.'},
- formula:{src:'sophikart-formula.glb?v=exterior-only-20261023-r12',chassisSrc:'sophikart-formula-chassis.glb?v=exterior-only-20261023-r12',fullSrc:'sophikart-formula-full.glb?v=exterior-only-20261023-r12',prefix:'formula',step:'Formula_Exterior_Only.zip?v=exterior-only-20261023-r12',count:3,title:'Formula',edition:'FORMULA',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Tapered nose, sculpted sidepods, an enclosed rear fairing and integrated spoiler.'},
- rally:{src:'sophikart-rally.glb?v=exterior-only-20261023-r12',chassisSrc:'sophikart-rally-chassis.glb?v=exterior-only-20261023-r12',fullSrc:'sophikart-rally-full.glb?v=exterior-only-20261023-r12',prefix:'rally',step:'Rally_Exterior_Only.zip?v=exterior-only-20261023-r12',count:7,title:'Rally',edition:'RALLY',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Angular bodywork, flared arches and separate auxiliary lamps.'},
- retro:{src:'sophikart-retro.glb?v=exterior-only-20261023-r12',chassisSrc:'sophikart-retro-chassis.glb?v=exterior-only-20261023-r12',fullSrc:'sophikart-retro-full.glb?v=exterior-only-20261023-r12',prefix:'retro',step:'Retro_Exterior_Only.zip?v=exterior-only-20261023-r12',count:7,title:'Retro GT',edition:'RETRO GT',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Curved coupe bodywork, round headlights and a compact ducktail.'}
+ track:{src:'sophikart.glb?v=exterior-only-20261023-r14',chassisSrc:'sophikart-chassis.glb?v=exterior-only-20261023-r14',fullSrc:'sophikart-track-full.glb?v=exterior-only-20261023-r14',prefix:'track',step:'Track_Exterior_Only.zip?v=exterior-only-20261023-r14',count:7,title:'Track',edition:'TRACK',heading:'Small scale.<br><em>Track</em><br>attitude.',description:'Low bodywork, wide arches and separate headlight pieces.'},
+ formula:{src:'sophikart-formula.glb?v=exterior-only-20261023-r14',chassisSrc:'sophikart-formula-chassis.glb?v=exterior-only-20261023-r14',fullSrc:'sophikart-formula-full.glb?v=exterior-only-20261023-r14',prefix:'formula',step:'Formula_Exterior_Only.zip?v=exterior-only-20261023-r14',count:3,title:'Formula',edition:'FORMULA',heading:'Small scale.<br><em>Formula</em><br>attitude.',description:'Tapered nose, sculpted sidepods, an enclosed rear fairing and integrated spoiler.'},
+ rally:{src:'sophikart-rally.glb?v=exterior-only-20261023-r14',chassisSrc:'sophikart-rally-chassis.glb?v=exterior-only-20261023-r14',fullSrc:'sophikart-rally-full.glb?v=exterior-only-20261023-r14',prefix:'rally',step:'Rally_Exterior_Only.zip?v=exterior-only-20261023-r14',count:7,title:'Rally',edition:'RALLY',heading:'Small scale.<br><em>Rally</em><br>spirit.',description:'Angular bodywork, flared arches and separate auxiliary lamps.'},
+ retro:{src:'sophikart-retro.glb?v=exterior-only-20261023-r14',chassisSrc:'sophikart-retro-chassis.glb?v=exterior-only-20261023-r14',fullSrc:'sophikart-retro-full.glb?v=exterior-only-20261023-r14',prefix:'retro',step:'Retro_Exterior_Only.zip?v=exterior-only-20261023-r14',count:7,title:'Retro GT',edition:'RETRO GT',heading:'Small scale.<br><em>Retro GT</em><br>character.',description:'Curved coupe bodywork, round headlights and a compact ducktail.'}
 };
 let activeModel='track',failed=false,exploded=0,motionFrame=0,motionReady=false,cameraView='front',bodyworkHidden=false,previewMode='full';
 const bodyworkToggle=document.querySelector('#bodywork-toggle');
@@ -121,7 +121,7 @@ function setCamera(name){
  cameraView=name==='reset'?'front':name;
  const cameraSelect=document.querySelector('#camera-view');
  if(cameraSelect)cameraSelect.value=cameraView;
- if(failed){fallback.src=`./assets/${models[activeModel].prefix}_${name==='reset'?'front':name}.png?v=exterior-only-20261023-r12`;fallback.alt=`${name==='reset'?'Front':name} CAD preview of Sophikart ${activeModel}`;}
+ if(failed){fallback.src=`./assets/${models[activeModel].prefix}_${name==='reset'?'front':name}.png?v=exterior-only-20261023-r14`;fallback.alt=`${name==='reset'?'Front':name} CAD preview of Sophikart ${activeModel}`;}
  else{const radius=activeModel==='original'&&bodyworkHidden?85:activeModel==='formula'?previewMode==='full'?105:85:previewMode==='full'?125:105;car.cameraOrbit=cameras[name].replace('105%',`${radius+exploded*50}%`);car.cameraTarget=exploded>0?`auto ${60+exploded*60}m auto`:'auto auto auto';if(name==='reset')requestAnimationFrame(()=>car.jumpCameraToGoal?.());else if(matchMedia('(prefers-reduced-motion: reduce)').matches)car.jumpCameraToGoal?.();}
  document.querySelectorAll('[data-camera]').forEach(button=>{if(button.dataset.camera!=='reset')button.setAttribute('aria-pressed',String(button.dataset.camera===(name==='reset'?'front':name)));});
 }
@@ -154,7 +154,7 @@ function selectModel(name){
   document.querySelector('.progress-track').hidden=false;
   document.querySelector('#load-progress').style.width='0%';
   document.querySelector('#orbit-hint').innerHTML='Drag to orbit <span class="dot">·</span> Scroll to zoom';
-  car.poster=`./assets/${model.prefix}_front.png?v=exterior-only-20261023-r12`;
+  car.poster=`./assets/${model.prefix}_front.png?v=exterior-only-20261023-r14`;
   fallback.src=car.poster;
   loadViewer();
   setCamera('front');
