@@ -6,7 +6,7 @@
   "mounting_features_included": false,
   "external_mount_root_cleanup": {
     "Rear_Module": {
-      "removed_excess_mm3": 0.0,
+      "removed_excess_mm3": 4717.957077865329,
       "remaining_excess_mm3": 0.0
     },
     "Middle_Module": {

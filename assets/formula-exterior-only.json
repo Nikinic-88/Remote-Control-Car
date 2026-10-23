@@ -85,5 +85,32 @@
       "step": "Formula_Rear_Wing_Stay_R.step",
       "stl": "Formula_Rear_Wing_Stay_R.stl"
     }
+  ],
+  "printer_optimized_variants": [
+    {
+      "name": "Formula_Center_Rear_Combined_A1",
+      "role": "optional_combination",
+      "size_mm": [
+        235.50000000000006,
+        194.5000000000001,
+        108.00000010000008
+      ],
+      "step": "Formula_Center_Rear_Combined_A1.step",
+      "stl": "Formula_Center_Rear_Combined_A1.stl",
+      "replaces": [
+        "Formula_Middle_Module",
+        "Formula_Rear_Module",
+        "Formula_Rear_Fairing",
+        "Formula_Rear_Wing_Stay_L",
+        "Formula_Rear_Wing_Stay_R"
+      ],
+      "printer": "Bambu Lab A1",
+      "build_volume_mm": [
+        256,
+        256,
+        256
+      ],
+      "minimum_bed_margin_mm": 10.25
+    }
   ]
 }
