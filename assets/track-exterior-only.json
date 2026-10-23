@@ -47,7 +47,7 @@
       "size_mm": [
         125.93913206973298,
         198.56367476728224,
-        67.55897655810632
+        67.55853679102873
       ],
       "step": "Track_Front_Module.step",
       "stl": "Track_Front_Module.stl"
@@ -56,9 +56,9 @@
       "name": "Track_Headlamp_Housing_L",
       "role": "lamp_housing",
       "size_mm": [
-        32.84014639738271,
-        42.677355771168,
-        37.77212994692953
+        36.126787541546946,
+        48.22860226357537,
+        25.290192868695378
       ],
       "step": "Track_Headlamp_Housing_L.step",
       "stl": "Track_Headlamp_Housing_L.stl"
@@ -67,9 +67,9 @@
       "name": "Track_Headlamp_Lens_L",
       "role": "lamp_lens",
       "size_mm": [
-        25.457262990706084,
-        31.055643396404292,
-        33.84919583276201
+        23.96388957242152,
+        30.50357563162592,
+        17.82272783177401
       ],
       "step": "Track_Headlamp_Lens_L.step",
       "stl": "Track_Headlamp_Lens_L.stl"
@@ -78,9 +78,9 @@
       "name": "Track_Headlamp_Housing_R",
       "role": "lamp_housing",
       "size_mm": [
-        32.84014531968617,
-        42.6823815025535,
-        37.77212887335166
+        36.021996444965595,
+        48.123811166994,
+        25.242132521621834
       ],
       "step": "Track_Headlamp_Housing_R.step",
       "stl": "Track_Headlamp_Housing_R.stl"
@@ -89,9 +89,9 @@
       "name": "Track_Headlamp_Lens_R",
       "role": "lamp_lens",
       "size_mm": [
-        25.454248216924753,
-        31.05564339883354,
-        33.84919583275938
+        23.963889571999175,
+        30.50357563120358,
+        17.822727828660568
       ],
       "step": "Track_Headlamp_Lens_R.step",
       "stl": "Track_Headlamp_Lens_R.stl"
