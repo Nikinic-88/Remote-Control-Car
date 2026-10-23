@@ -23,7 +23,7 @@
       "name": "Track_Rear_Module",
       "role": "shell",
       "size_mm": [
-        125.76931834947823,
+        187.0446988059289,
         201.02368370031638,
         110.00011443129786
       ],
@@ -31,23 +31,12 @@
       "stl": "Track_Rear_Module.stl"
     },
     {
-      "name": "Track_Middle_Module",
-      "role": "shell",
-      "size_mm": [
-        122.48723650193915,
-        191.11106456217126,
-        96.61971654964198
-      ],
-      "step": "Track_Middle_Module.step",
-      "stl": "Track_Middle_Module.stl"
-    },
-    {
       "name": "Track_Front_Module",
       "role": "shell",
       "size_mm": [
-        125.93913206973298,
+        186.00257153438992,
         198.56367476728224,
-        67.55853679102873
+        100.04222329893531
       ],
       "step": "Track_Front_Module.step",
       "stl": "Track_Front_Module.stl"
