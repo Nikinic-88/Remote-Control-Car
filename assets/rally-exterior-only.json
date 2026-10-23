@@ -23,8 +23,8 @@
       "name": "Rally_Rear_Module",
       "role": "shell",
       "size_mm": [
-        128.0013987904233,
-        201.12770791529633,
+        125.97593398318179,
+        201.12733713768017,
         105.79917382928116
       ],
       "step": "Rally_Rear_Module.step",
@@ -34,8 +34,8 @@
       "name": "Rally_Middle_Module",
       "role": "shell",
       "size_mm": [
-        122.20934512988867,
-        200.00000020015239,
+        120.85044653946544,
+        194.95300019999996,
         107.40000020007618
       ],
       "step": "Rally_Middle_Module.step",
@@ -45,9 +45,9 @@
       "name": "Rally_Front_Module",
       "role": "shell",
       "size_mm": [
-        130.24490936637892,
-        201.10510680241634,
-        72.00000020008403
+        130.2486070946514,
+        201.11843033503203,
+        70.01607106367048
       ],
       "step": "Rally_Front_Module.step",
       "stl": "Rally_Front_Module.stl"
@@ -56,9 +56,9 @@
       "name": "Rally_Headlamp_Housing_L",
       "role": "lamp_housing",
       "size_mm": [
-        31.700000100000153,
-        31.477166268639834,
-        36.70000019999998
+        32.084661520947634,
+        31.547387511524796,
+        36.71703440122306
       ],
       "step": "Rally_Headlamp_Housing_L.step",
       "stl": "Rally_Headlamp_Housing_L.stl"
@@ -67,9 +67,9 @@
       "name": "Rally_Headlamp_Lens_L",
       "role": "lamp_lens",
       "size_mm": [
-        17.39527241809006,
-        24.0,
-        28.500000099999966
+        17.399671531231746,
+        24.000000200001352,
+        28.509882454975717
       ],
       "step": "Rally_Headlamp_Lens_L.step",
       "stl": "Rally_Headlamp_Lens_L.stl"
@@ -78,9 +78,9 @@
       "name": "Rally_Headlamp_Housing_R",
       "role": "lamp_housing",
       "size_mm": [
-        31.700000100000125,
-        31.47716626864024,
-        36.700000199999984
+        32.08466152094752,
+        31.548604646748316,
+        36.71703438385856
       ],
       "step": "Rally_Headlamp_Housing_R.step",
       "stl": "Rally_Headlamp_Housing_R.stl"
@@ -89,9 +89,9 @@
       "name": "Rally_Headlamp_Lens_R",
       "role": "lamp_lens",
       "size_mm": [
-        17.395272418090087,
-        24.0,
-        28.500000099999966
+        17.399671531231746,
+        24.00000020000089,
+        28.509882454975468
       ],
       "step": "Rally_Headlamp_Lens_R.step",
       "stl": "Rally_Headlamp_Lens_R.stl"
