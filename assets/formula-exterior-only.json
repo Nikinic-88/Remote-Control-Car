@@ -23,9 +23,9 @@
       "name": "Formula_Rear_Module",
       "role": "shell",
       "size_mm": [
-        39.00000020000016,
+        83.88685030787019,
         194.50000020000027,
-        108.06468533930403
+        108.0000002000024
       ],
       "step": "Formula_Rear_Module.step",
       "stl": "Formula_Rear_Module.stl"
@@ -34,7 +34,7 @@
       "name": "Formula_Middle_Module",
       "role": "shell",
       "size_mm": [
-        141.8158037216577,
+        162.29178342422153,
         139.00000020000033,
         94.49746725935391
       ],
@@ -45,72 +45,12 @@
       "name": "Formula_Front_Module",
       "role": "shell",
       "size_mm": [
-        144.5470171816707,
+        144.51948910759043,
         198.50000020000152,
-        76.00315694026689
+        76.14504716478214
       ],
       "step": "Formula_Front_Module.step",
       "stl": "Formula_Front_Module.stl"
-    },
-    {
-      "name": "Formula_Rear_Fairing",
-      "role": "shell",
-      "size_mm": [
-        71.00000019999999,
-        136.0000002,
-        36.00000020000001
-      ],
-      "step": "Formula_Rear_Fairing.step",
-      "stl": "Formula_Rear_Fairing.stl"
-    },
-    {
-      "name": "Formula_Rear_Wing_Stay_L",
-      "role": "shell",
-      "size_mm": [
-        31.640606749215863,
-        35.64909553699989,
-        41.36869029604867
-      ],
-      "step": "Formula_Rear_Wing_Stay_L.step",
-      "stl": "Formula_Rear_Wing_Stay_L.stl"
-    },
-    {
-      "name": "Formula_Rear_Wing_Stay_R",
-      "role": "shell",
-      "size_mm": [
-        31.640606749215863,
-        35.64909553699989,
-        41.36869029604867
-      ],
-      "step": "Formula_Rear_Wing_Stay_R.step",
-      "stl": "Formula_Rear_Wing_Stay_R.stl"
-    }
-  ],
-  "printer_optimized_variants": [
-    {
-      "name": "Formula_Center_Rear_Combined_A1",
-      "role": "optional_combination",
-      "size_mm": [
-        235.50000000000006,
-        194.5000000000001,
-        108.00000010000008
-      ],
-      "step": "Formula_Center_Rear_Combined_A1.step",
-      "stl": "Formula_Center_Rear_Combined_A1.stl",
-      "replaces": [
-        "Formula_Middle_Module",
-        "Formula_Rear_Module",
-        "Formula_Rear_Fairing",
-        "Formula_Rear_Wing_Stay_L",
-        "Formula_Rear_Wing_Stay_R"
-      ],
-      "printer": "Bambu Lab A1",
-      "build_volume_mm": [
-        256,
-        256,
-        256
-      ],
-      "minimum_bed_margin_mm": 10.25
     }
   ]
 }
