@@ -51,6 +51,39 @@
       ],
       "step": "Formula_Front_Module.step",
       "stl": "Formula_Front_Module.stl"
+    },
+    {
+      "name": "Formula_Rear_Fairing",
+      "role": "shell",
+      "size_mm": [
+        71.00000019999999,
+        56.00000020000002,
+        36.00000020000001
+      ],
+      "step": "Formula_Rear_Fairing.step",
+      "stl": "Formula_Rear_Fairing.stl"
+    },
+    {
+      "name": "Formula_Rear_Wing_Stay_L",
+      "role": "shell",
+      "size_mm": [
+        31.640606749215863,
+        35.64909553699989,
+        41.36869029604867
+      ],
+      "step": "Formula_Rear_Wing_Stay_L.step",
+      "stl": "Formula_Rear_Wing_Stay_L.stl"
+    },
+    {
+      "name": "Formula_Rear_Wing_Stay_R",
+      "role": "shell",
+      "size_mm": [
+        31.640606749215863,
+        35.64909553699989,
+        41.36869029604867
+      ],
+      "step": "Formula_Rear_Wing_Stay_R.step",
+      "stl": "Formula_Rear_Wing_Stay_R.stl"
     }
   ]
 }
