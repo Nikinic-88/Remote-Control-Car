@@ -4,6 +4,20 @@
   "units": "mm",
   "exterior_only": true,
   "mounting_features_included": false,
+  "external_mount_root_cleanup": {
+    "Rear_Module": {
+      "removed_excess_mm3": 0.0,
+      "remaining_excess_mm3": 0.0
+    },
+    "Middle_Module": {
+      "removed_excess_mm3": 0.0,
+      "remaining_excess_mm3": 0.0
+    },
+    "Front_Module": {
+      "removed_excess_mm3": 0.0,
+      "remaining_excess_mm3": 0.0
+    }
+  },
   "parts": [
     {
       "name": "Formula_Rear_Module",
