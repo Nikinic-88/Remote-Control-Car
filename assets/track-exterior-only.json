@@ -115,6 +115,28 @@
       ],
       "step": "Track_Side_Window_R_Insert.step",
       "stl": "Track_Side_Window_R_Insert.stl"
+    },
+    {
+      "name": "Track_Rear_Light_L_Insert",
+      "role": "rear_light_insert",
+      "size_mm": [
+        16.695499262092085,
+        35.30141315313562,
+        14.298871560494142
+      ],
+      "step": "Track_Rear_Light_L_Insert.step",
+      "stl": "Track_Rear_Light_L_Insert.stl"
+    },
+    {
+      "name": "Track_Rear_Light_R_Insert",
+      "role": "rear_light_insert",
+      "size_mm": [
+        16.667801845181913,
+        35.288425247990716,
+        14.33859963845655
+      ],
+      "step": "Track_Rear_Light_R_Insert.step",
+      "stl": "Track_Rear_Light_R_Insert.stl"
     }
   ]
 }
