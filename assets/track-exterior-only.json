@@ -10,9 +10,9 @@
       "name": "Track_Rear_Module",
       "role": "shell",
       "size_mm": [
-        187.1650454768564,
+        187.16504548718623,
         201.02368370031573,
-        110.00011443133214
+        110.00011443133216
       ],
       "step": "Track_Rear_Module.step",
       "stl": "Track_Rear_Module.stl"
@@ -21,9 +21,9 @@
       "name": "Track_Front_Module",
       "role": "shell",
       "size_mm": [
-        186.0025715343974,
-        198.5636747672823,
-        100.0212992753762
+        186.00257153439745,
+        198.77828175327988,
+        100.02129927537732
       ],
       "step": "Track_Front_Module.step",
       "stl": "Track_Front_Module.stl"
@@ -43,8 +43,8 @@
       "name": "Track_Headlamp_Lens_L",
       "role": "lamp_lens",
       "size_mm": [
-        23.963889572462108,
-        30.50357563167111,
+        23.963889572459948,
+        30.50357563166895,
         17.82272783177723
       ],
       "step": "Track_Headlamp_Lens_L.step",
@@ -54,8 +54,8 @@
       "name": "Track_Headlamp_Housing_R",
       "role": "lamp_housing",
       "size_mm": [
-        36.02199644501334,
-        48.12381116703336,
+        36.02199644501337,
+        48.12381116703338,
         25.24213252159359
       ],
       "step": "Track_Headlamp_Housing_R.step",
@@ -65,9 +65,9 @@
       "name": "Track_Headlamp_Lens_R",
       "role": "lamp_lens",
       "size_mm": [
-        23.963889572010913,
-        30.50357563122092,
-        17.822727828687164
+        23.963889572011198,
+        30.503575631221217,
+        17.822727831795014
       ],
       "step": "Track_Headlamp_Lens_R.step",
       "stl": "Track_Headlamp_Lens_R.stl"
@@ -76,9 +76,9 @@
       "name": "Track_Rear_Window_Rear_Insert",
       "role": "window_insert",
       "size_mm": [
-        27.130580754149037,
-        95.20109140412288,
-        25.767075184608736
+        27.130580754152483,
+        95.2010914041204,
+        25.767075184610476
       ],
       "step": "Track_Rear_Window_Rear_Insert.step",
       "stl": "Track_Rear_Window_Rear_Insert.stl"
@@ -87,9 +87,9 @@
       "name": "Track_Windscreen_Front_Insert",
       "role": "window_insert",
       "size_mm": [
-        29.00672365765726,
-        97.3484307784291,
-        29.860441342058564
+        29.00672365765242,
+        97.34843082478662,
+        29.86044134205342
       ],
       "step": "Track_Windscreen_Front_Insert.step",
       "stl": "Track_Windscreen_Front_Insert.stl"
@@ -98,9 +98,9 @@
       "name": "Track_Side_Window_L_Insert",
       "role": "window_insert",
       "size_mm": [
-        88.58937280059718,
-        14.717711623217177,
-        25.350474771650397
+        88.5893728005787,
+        14.717711623209908,
+        25.350474771643107
       ],
       "step": "Track_Side_Window_L_Insert.step",
       "stl": "Track_Side_Window_L_Insert.stl"
@@ -109,9 +109,9 @@
       "name": "Track_Side_Window_R_Insert",
       "role": "window_insert",
       "size_mm": [
-        88.58937334101665,
-        14.71187460353839,
-        25.358674305610364
+        88.58937334100128,
+        14.711874603520393,
+        25.35867430560758
       ],
       "step": "Track_Side_Window_R_Insert.step",
       "stl": "Track_Side_Window_R_Insert.stl"
@@ -120,9 +120,9 @@
       "name": "Track_Rear_Light_L_Insert",
       "role": "rear_light_insert",
       "size_mm": [
-        16.695499262092085,
-        35.30141315313562,
-        14.298871560494142
+        16.695499262240702,
+        35.30141315314411,
+        14.298871560528944
       ],
       "step": "Track_Rear_Light_L_Insert.step",
       "stl": "Track_Rear_Light_L_Insert.stl"
@@ -131,9 +131,9 @@
       "name": "Track_Rear_Light_R_Insert",
       "role": "rear_light_insert",
       "size_mm": [
-        16.667801845181913,
-        35.288425247990716,
-        14.33859963845655
+        16.667801845163694,
+        35.2884252479821,
+        14.338599638467535
       ],
       "step": "Track_Rear_Light_R_Insert.step",
       "stl": "Track_Rear_Light_R_Insert.stl"
